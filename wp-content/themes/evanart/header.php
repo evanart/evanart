@@ -27,9 +27,15 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		
-		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<!--<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+		Other Options: http://www.google.com/webfonts#ReviewPlace:refine/Collection:Lato|Rokkitt|Muli|Rosario
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt|Muli:300,300italic' rel='stylesheet' type='text/css'>
+		-->
+		
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Rokkitt' rel='stylesheet' type='text/css'>
+		
 		
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
@@ -48,7 +54,7 @@
 					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 					
 					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
+					<p class="site-desciption"><?php  bloginfo('description'); ?></p>
 					
 					
 					<nav role="navigation">

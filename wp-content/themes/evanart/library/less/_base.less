@@ -37,6 +37,7 @@ and will be used across all viewports.
 body {
 	font-family: @sans-serif;
 	font-size: 100%;
+	font-weight: 300;
 	line-height: 1.5;
 	color: #565656;
 	background: url(../images/bg.gif)
@@ -127,9 +128,10 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+	font-family: @serif;
 	text-rendering: optimizelegibility;
 	font-weight: 400;
+	color: @evanart-red;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -141,8 +143,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
- h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @sans-serif;
+	font-weight: 400;
  }
 
 h1, .h1 {
@@ -182,21 +185,33 @@ h5, .h5 {
 
 	#logo {
 		font-size: 7em;
-		line-height: 1em;
-		margin: .1em 0 .4em;
+		line-height: .6em;
+		margin: 40px 0 0;
 		text-shadow: 0 3px 0 rgba(91, 0, 0, 0.19), 0 -2px 0 #FFFFFF;
+		
+	}
+	
+	.site-desciption {
+		font-weight: 400;
+		margin: 0 0 30px 105px;
+		color: rgb(151, 151, 151);
+		font-style: italic;
 	}
 
 	nav {
-		.OrangeBox;
+		.TextureBoxBeta;
 		padding: 0;
 			.nav ul {
+				width: 100%;
 				float: left;
 				margin: 0;
 				li {
 					
 					a {
-						font-size: 1.1em;	
+						font-size: 1.1em;
+						&:hover {
+							color: #fff;
+						}
 					}
 	
 					&:first-child {}
@@ -207,13 +222,7 @@ h5, .h5 {
 	}
 }
 
-article {
-	header.article-header {
-		h3.h2 {
-			margin-top: .25em;
-		}
-	}
-}
+
 
 
 /*********************
@@ -229,8 +238,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+	
 
 	li {
 
@@ -239,7 +247,9 @@ and more scalable.
 			text-decoration: none;
 			padding: 10px 20px;
 			background-color: transparent;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 1px solid #62a5a6;
+			color: #fff;
+			text-shadow: 1px 1px 0 rgba(0,0,0,.2);
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -254,8 +264,14 @@ and more scalable.
 
 		&:first-child {}
 
-		&:last-child {}
-
+		&:last-child {
+			a {
+				border: none;
+			}
+		}
+		
+		
+		
 		/*
 		so you really have to rethink your dropdowns for mobile.
 		you don't want to have it expand too much because the
@@ -280,7 +296,11 @@ and more scalable.
 
 				&:first-child {}
 
-				&:last-child {}
+				&:last-child {
+					a {
+						border: none;
+					}
+				}
 
 			}
 
@@ -320,7 +340,7 @@ and more scalable.
 
 		.single-title,
 		.page-title {
-			border-bottom: 1px solid #ccc;
+			//border-bottom: 1px solid #ccc;
 		}
 
 		.single-title {}
@@ -328,21 +348,34 @@ and more scalable.
 		.page-title {}
 
 		.archive-title {
-			.RedBox;
+			.TextureBoxBeta;
 			color: #fff;
 			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 			margin: 0 0 20px 0;
-			padding: 5px 20px 10px;
+			padding: 5px 20px 5px;
 			
 		}
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {
+		article.post {
 			.AlphaBox;
-			//padding: 10px 20px;
-		}            /* general post style */
-		.page {
+		}
+		article.post.format-image {
+			.wp-caption {
+				max-width: 100%;
+			}
+			.byline {
+				
+	
+				time {
+					display:none;
+				}
+			}
+		}
+		
+		/* general post style */
+		article.page {
 			.AlphaBox;
 			//padding: 10px 20px;
 		}            /* general article on a page style */
@@ -359,7 +392,9 @@ and more scalable.
 			font-size: .8em;
 			margin-top: 0;
 
-			time {}
+			time {
+				
+			}
 		}
 
 		/* entry content */
@@ -445,8 +480,8 @@ and more scalable.
 			}
 
 			p.wp-caption-text {
-				font-size: .75em;
-				margin: 15px 0 0;
+				font-size: .9em;
+				margin: 7px 0 0;
 				text-align: right;
 				font-style: italic;				
 			}
@@ -477,6 +512,42 @@ and more scalable.
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+		
+		
+		
+article {
+	header.article-header {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 15px;
+		
+		h1, h1.h2, h2, h3.h2 {
+			margin: 0;
+		}
+		
+		h3.h2 {
+			//margin-top: .25em;
+		}
+		
+		.byline {
+			margin-bottom: 5px;
+		}
+	}
+	
+	footer.article-footer {
+			margin-top: 15px;
+			//border-top: 1px solid #ccc;
+			color: #999;
+			font-style: italic;
+			font-size: .8em;
+				
+			p {
+				margin: 0 0 5px;
+				
+			}
+		
+	}
+}
+		
 
 /******************************************************************
 09. PAGE NAVI STYLES
@@ -898,7 +969,13 @@ and more scalable.
 *********************/
 
 .footer {
+	border-top: 1px solid #ccc;
+	background-color: rgba(194,194,194,0.26);
+	box-shadow: 3px 4px 1px rgba(0,0,0,0.07) inset;
 	clear: both;
+	padding: 20px 0 100px;
+	margin-top: 100px;
+	
 	#inner-footer {
 	}
 	nav {

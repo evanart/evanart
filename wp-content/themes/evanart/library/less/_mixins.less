@@ -66,8 +66,17 @@ http://0to255.com/
 @evanart-lightred:  #cc8686;
 
 
+
+
 @link-color:        @evanart-red;
 @link-hover:        darken(@link-color, 9%);
+
+/*************
+ BG Images
+**************/
+
+@textureBeta: url(../images/texture_alpha.gif) repeat left top #8ecfd0;
+
 
 /*
 Here's a great tutorial on how to
@@ -80,8 +89,9 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-@sans-serif:         'Open Sans', Verdana, Helvetica, sans-serif;
-@serif:              'Bree Serif', Georgia, serif;
+@sans-serif:       'Lato', sans-serif;
+@serif:            'Rokkitt', serif;
+
 
 
 /* 	To embed your own fonts, use this syntax
@@ -291,9 +301,9 @@ BUTTONS
   padding: 10px;
 }
 
-.OrangeBox {
+.TextureBoxBeta {
   box-shadow: 3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9);
-  border: 1px solid rgb(172, 101, 101);
-  background-color: @evanart-lightred;
+  border: 1px solid #62a5a6;
+  background: @textureBeta;
   padding: 10px;
 }
