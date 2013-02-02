@@ -141,7 +141,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
- h3, .h3, h4, .h4, h5, .h5 {
+ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @sans-serif;
  }
 
@@ -206,6 +206,15 @@ h5, .h5 {
 			}
 	}
 }
+
+article {
+	header.article-header {
+		h3.h2 {
+			margin-top: .25em;
+		}
+	}
+}
+
 
 /*********************
 07. NAVIGATION STYLES
@@ -426,8 +435,8 @@ and more scalable.
 		} /* end .entry-content */
 
 		.wp-caption {
-			background: #eee;
-			padding: 5px;
+			//background: #eee;
+			//padding: 5px;
 
 			/* images inside wp-caption */
 			img {
@@ -436,9 +445,11 @@ and more scalable.
 			}
 
 			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
+				font-size: .75em;
+				margin: 15px 0 7px;
+				text-align: right;
+				font-style: italic;
+				
 			}
 
 		} /* end .wp-caption */
