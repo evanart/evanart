@@ -26,9 +26,13 @@ and will be used across all viewports.
 13. FOOTER STYLES
 
 ******************************************************************/
+/********
+wide images should be: max width 950
 
+tall images should be: max height 800
 
-
+square images should be: max width & height: 700
+*******/
 
 /*********************
 01. GENERAL STYLES
@@ -37,7 +41,7 @@ and will be used across all viewports.
 body {
 	font-family: @sans-serif;
 	font-size: 100%;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.5;
 	color: #565656;
 	background: url(../images/bg.gif)
@@ -100,6 +104,7 @@ body {
 a, a:visited {
 	color: @link-color;
 	text-decoration: none;
+	font-weight: 400;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -130,7 +135,7 @@ a, a:visited {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @serif;
 	text-rendering: optimizelegibility;
-	font-weight: 400;
+	font-weight: 700;
 	color: @evanart-red;
 	/*
 	if you're going to use webfonts, be sure to check your weights
@@ -193,9 +198,10 @@ h5, .h5 {
 	
 	.site-desciption {
 		font-weight: 400;
-		margin: 0 0 30px 105px;
+		margin: 0 0 30px 85px;
 		color: rgb(151, 151, 151);
 		font-style: italic;
+		font-size: 1.1em;
 	}
 
 	nav {
@@ -596,7 +602,7 @@ article {
 		/* common styles for page-navi links */
 		li.bpn-prev-link,
 		li.bpn-next-link {
-			font-weight: 700;
+			font-weight: 400;
 
 			a {
 				padding: 0;
@@ -759,7 +765,7 @@ article {
 		margin-left: 50px;
 
 		cite.fn {
-			font-weight: 700;
+			font-weight: 400;
 			font-style: normal;
 
 			a.url {}
@@ -828,7 +834,7 @@ article {
 		color: #fff;
 		opacity: 0.65;
 		margin-bottom: 10px;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: 0.9em;
 
 		&:hover,

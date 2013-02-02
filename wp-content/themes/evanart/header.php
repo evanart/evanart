@@ -34,7 +34,7 @@
 		-->
 		
 		
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Rokkitt' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Rokkitt:700' rel='stylesheet' type='text/css'>
 		
 		
 		<!-- drop Google Analytics Here -->
