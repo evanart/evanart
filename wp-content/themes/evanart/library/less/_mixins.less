@@ -75,8 +75,11 @@ http://0to255.com/
  BG Images
 **************/
 
-@textureBeta: url(../images/texture_alpha.gif) repeat left top #8ecfd0;
+@textureAlpha: url(../images/texture_alpha.gif) repeat left top #ab3030;
 
+@textureBeta: url(../images/texture_beta.gif) repeat left top #8ecfd0;
+
+@textureGamma: url(../images/texture_gamma.gif) repeat left top #e68e30;
 
 /*
 Here's a great tutorial on how to
@@ -302,9 +305,23 @@ BUTTONS
   padding: 10px;
 }
 
+.TextureBoxAlpha {
+  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
+  border: 1px solid #7a1313;
+  background: @textureAlpha;
+  padding: 10px;
+}
+
 .TextureBoxBeta {
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.07),0 -1px 0 rgba(255,255,255,0.3);
+  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
   border: 1px solid #62a5a6;
   background: @textureBeta;
+  padding: 10px;
+}
+
+.TextureBoxGamma {
+  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
+  border: 1px solid #b16615;
+  background: @textureGamma;
   padding: 10px;
 }

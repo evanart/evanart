@@ -149,12 +149,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	/* removing text decoration from all headline links */
 	a {
 		text-decoration: none;
+		font-weight: 700;
 	}
 }
 
 h3, .h3, h4, .h4, h5, .h5 {
 	font-family: @sans-serif;
 	font-weight: 400;
+	
+	a {
+		font-weight: 400;
+	}
  }
 
 h1, .h1 {
@@ -191,32 +196,42 @@ h5, .h5 {
 
 .header {
 	#inner-header {}
-
-	#logo {
-		font-size: 7em;
-		line-height: .6em;
-		margin: 40px 0 0;
-		text-shadow:  0 1px 0 rgb(164, 179, 219),  0 2px 0 rgb(164, 179, 219),  0 3px 0 rgb(164, 179, 219),  0 4px 0 rgb(164, 179, 219),  0 5px 0 rgb(164, 179, 219);
-			
-			a {
-				color:#fff;
-			}
-		
-	}
 	
-	.site-desciption {
-		font-weight: 400;
-		margin: -45px 0 50px 0;
-		color: #fff;
-		//font-style: italic;
-		font-size: 1.8em;
-		text-shadow:  1px 1px 0 rgb(164, 179, 219),  2px 2px 0 rgb(164, 179, 219);
-		text-align: right;
-	}
+	#heading-container {
+		float: left;
+		width: 100%;
+		#logo {
+			font-size: 7em;
+			line-height: .6em;
+			margin: 40px 0 40px;
+			text-shadow:  0 1px 0 #dd9950,  0 2px 0 #dd9950,  0 3px 0 #dd9950,  0 4px 0 #dd9950,  0 5px 0 #dd9950;
+			float:left;
 
+				a {
+					
+				}
+			
+		}
+		
+		.site-desciption {
+			font-weight: 400;
+			margin: 65px 0 0;
+			color: #fff;
+			//font-style: italic;
+			font-size: 1.8em;
+			text-shadow:  0 1px 0 #dd9950, 0 2px 0 #dd9950;
+			text-align: right;
+			color: #ab3030;
+			float: right;
+		}
+	}
+		
 	nav {
-		.TextureBoxBeta;
+		
+		.TextureBoxAlpha;
+		width:100%;
 		padding: 0;
+		float: left;
 			.nav ul {
 				width: 100%;
 				float: left;
@@ -364,7 +379,7 @@ and more scalable.
 		.page-title {}
 
 		.archive-title {
-			.TextureBoxBeta;
+			.TextureBoxGamma;
 			color: #fff;
 			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 			margin: 0 0 20px 0;
