@@ -233,7 +233,7 @@ h5, .h5 {
 		padding: 0;
 		float: left;
 		margin: 0;
-			.nav ul {
+			ul.nav.top-nav {
 				width: 100%;
 				float: left;
 				margin: 0;
@@ -269,7 +269,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-.nav {
+.nav.top-nav {
 	
 
 	li {
@@ -406,6 +406,16 @@ and more scalable.
 			}
 		}
 		
+		article.post.format-standard {
+			.wp-caption {
+				max-width: 100%;
+				margin-bottom: 30px;
+				img {
+					
+				}
+			}
+		}
+		
 		/* general post style */
 		article.page {
 			.AlphaBox;
@@ -432,8 +442,13 @@ and more scalable.
 		/* entry content */
 		.entry-content {
 
-			p {}
-
+			p {
+				&:first-child {
+					margin-top: 0;
+				}
+				
+			}
+					
 
 			ul, ol, table, dl {}
 
@@ -508,7 +523,7 @@ and more scalable.
 			/* images inside wp-caption */
 			img {
 				margin-bottom: 0;
-				width: 100%;
+				//width: 100%;
 			}
 
 			p.wp-caption-text {
