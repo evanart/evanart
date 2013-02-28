@@ -17,7 +17,11 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+   margin: 5px;
+   box-shadow: 0 0 30px rgba(0,0,0,.29);
+   border: 1px solid rgba(255,255,255,.6);
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -28,35 +32,34 @@ LAYOUT & GRID STYLES
 }
 
 
-//.post.format-image {
-//	header, footer {
-//		
-//	}
-//	
-//	footer {
-//		font-size: .7em;
-//	}
-//	
-//	.entry-content {
-//		
-//		div.wp-caption  {
-//			float: right;
-//			width: 70%;
-//			border-left: 1px solid #cacaca;
-//			padding-left: 5%;
-//		}
-//		
-//		> p {
-//			float: left;
-//			width: 25%;
-//			
-//	
-//		}
-//		
-//	}
-//	
-//	
-//}
+.post.format-image {
+	header, footer {
+		float: left;
+		width: 25%;
+	}
+	header.article-header {
+		border: none;
+	}
+	footer {
+		font-size: .7em;
+	}
+	
+	.entry-content {
+		
+		
+			float: left;
+			max-width: 73%;
+			//border-left: 1px solid #cacaca;
+			padding-left: 2%;
+		
+		
+		
+		
+		
+	}
+	
+	
+}
 
 
 
@@ -64,9 +67,27 @@ LAYOUT & GRID STYLES
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+	#heading-container {
+		#logo {
+			font-size: 7em;
+			margin: 40px 0 40px;
+			float:left;
+			width: auto;
+		
+		}
+		.site-desciption {
+			float: right;
+			margin: 47px 0 0;
+			width: 240px;
+			text-align: right;
+			line-height: 1.1em;
+		}
+	
+	}
+}
 
-	#logo {}
+	
 
 /*********************
 NAVIGATION STYLES
@@ -75,14 +96,18 @@ NAVIGATION STYLES
 .nav.top-nav {
 	
 	border: 0;
-
+	height: 47px;
 	li {
 		float: left;
 		position: relative;
 
 		a {
 			border-bottom: 0;
-			
+			-webkit-transition: background 0.2s, margin-top 0.2s;
+			-moz-transition: background 0.2s, margin-top 0.2s;
+			-ms-transition: background 0.2s, margin-top 0.2s;
+			-o-transition: background 0.2s, margin-top 0.2s;
+			transition: background, margin-top 0.2s;
 
 			/*
 			you can use hover styles here even though this size
@@ -91,9 +116,8 @@ NAVIGATION STYLES
 			&:hover, &:focus {
 				
 				box-shadow: 3px 3px 0 rgba(0,0,0,.1) ;
-				padding: 11px 21px 8px 21px;
+				padding: 9px 19px 9px 19px;
 				margin-top: -4px;
-				margin-left: -4px;
 				border: 1px solid #b16615;
 				background: @textureGamma;
 				background-position: center bottom;

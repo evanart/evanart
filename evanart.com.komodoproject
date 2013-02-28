@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="b7c28576-4aa5-4ef2-937d-d45ff66c96a4" kpf_version="5" name="evanart.com.komodoproject">
+<preference-set idref="b7c28576-4aa5-4ef2-937d-d45ff66c96a4">
+  <string id="import_dirname">ftp://ftp.evanart.com/</string>
+  <string id="import_exclude_matches">*.*~;*.bak;*.tmp;CVS;.#*;*.pyo;*.pyc;.svn;_svn;.git;.hg;.bzr;*%25*;tmp*.html;.DS_Store;*.swp;*.kpf;*.komodoproject;.komodotools;__pycache__</string>
+  <string id="import_include_matches"></string>
+  <string id="last_remote_directory">ftp://ftp.evanart.com/</string>
+</preference-set>
+</project>

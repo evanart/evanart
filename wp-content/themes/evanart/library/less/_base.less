@@ -44,8 +44,12 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #565656;
-	background: url(../images/bgTexture.gif)
+	background: url(../images/bgTexture.gif);
+	margin:10px 0;
+	box-shadow: 0 0 30px rgba(0,0,0,.29);
+	border: 1px solid rgba(255,255,255,.6);
 }
+
 
 #container {
 	background: url(../images/stripesBg.jpg) no-repeat 50% top transparent;
@@ -141,6 +145,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 700;
 	color: @evanart-red;
+	margin: 0;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -169,12 +174,12 @@ h1, .h1 {
 
 h2, .h2 {
 	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	line-height: 1.2em;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	font-size: 1.325em;
+	margin: .5em 0 .05em;
 }
 
 h4, .h4 {
@@ -201,12 +206,21 @@ h5, .h5 {
 		float: left;
 		width: 100%;
 		#logo {
-			font-size: 7em;
+			font-size: 6em;
 			line-height: .6em;
-			margin: 40px 0 40px;
-			text-shadow:  0 1px 0 #dd9950,  0 2px 0 #dd9950,  0 3px 0 #dd9950,  0 4px 0 #dd9950,  0 5px 0 #dd9950;
-			float:left;
-
+			text-shadow:  0 1px 0 #dd9950,  0 2px 0 #dd9950,  0 3px 0 #dd9950,  0 4px 0 #dd9950,  0 5px 0 #dd9950, 0 5px 30px #fff;
+			width: 100%;
+			margin: 30px 0 20px;
+			text-align: center;
+			-webkit-transition: text-shadow 0.4s, color 0.9s;
+			-moz-transition: text-shadow 0.4s,  color 0.9s;
+			-ms-transition: text-shadow 0.4s,  color 0.9s;
+			-o-transition: text-shadow 0.4s, color 0.9s;
+			transition: text-shadow 0.4s, color 0.9s;
+				&:hover {
+					text-shadow:  0 1px 0 #dd9950, 0 0 10px #fff;
+					
+				}
 				a {
 					
 				}
@@ -215,14 +229,14 @@ h5, .h5 {
 		
 		.site-desciption {
 			font-weight: 400;
-			margin: 65px 0 0;
+			margin: 0 0 35px 0;
 			color: #fff;
 			//font-style: italic;
 			font-size: 1.8em;
 			text-shadow:  0 1px 0 #dd9950, 0 2px 0 #dd9950;
-			text-align: right;
+			text-align: center;
 			color: #ab3030;
-			float: right;
+			width: 100%;
 		}
 	}
 		
@@ -279,7 +293,8 @@ and more scalable.
 			text-decoration: none;
 			padding: 10px 20px;
 			background-color: transparent;
-			border-bottom: 1px solid #62a5a6;
+			border-bottom: 1px solid #7a1313;
+			box-shadow: 0 1px 0 rgba(255,255,255,.2);
 			color: #fff;
 			text-shadow: 1px 1px 0 rgba(0,0,0,.2);
 
@@ -350,6 +365,11 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+.postBtn {
+	.TextureBoxGamma;
+	.Button;
+}
 
 
 /*********************
@@ -443,6 +463,7 @@ and more scalable.
 		.entry-content {
 
 			p {
+				margin: 0 0 20px 0;
 				&:first-child {
 					margin-top: 0;
 				}
@@ -453,9 +474,14 @@ and more scalable.
 			ul, ol, table, dl {}
 
 			ul, ol {
-
+				margin: 0 0 20px 0;
 				li {}
 
+			}
+			
+			ul.text-list, ol.text-list {
+				list-style: circle;
+				margin-left: 20px;
 			}
 
 			ul {
@@ -475,7 +501,7 @@ and more scalable.
 				&:before {}
 
 			}
-
+			
 			dl {}
 
 			dt {}
@@ -486,6 +512,8 @@ and more scalable.
 				color: #787878;
 				margin-bottom: 1.5em;
 			}
+			
+			
 
 			img {
 				margin: 0 0 1.5em 0;
@@ -502,7 +530,9 @@ and more scalable.
 			.alignleft, img.alignleft {}
 			.alignright, img.alignright {}
 			.aligncenter, img.aligncenter {}
-
+			
+			
+			
 			video, object {
 				max-width: 100%;
 				height: auto;
@@ -524,11 +554,14 @@ and more scalable.
 			img {
 				margin-bottom: 0;
 				//width: 100%;
+				
+			box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+		
 			}
 
 			p.wp-caption-text {
 				font-size: .9em;
-				margin: 7px 0 0;
+				margin: 7px 7px 0 0;
 				text-align: right;
 				font-style: italic;				
 			}
@@ -537,7 +570,7 @@ and more scalable.
 
 		/* image gallery styles */
 		.gallery {
-
+			
 			dl {
 
 				a {}
@@ -550,7 +583,12 @@ and more scalable.
 
 			dd {}
 
-		} /* end .gallery */
+		}
+		
+		
+		
+		
+		/* end .gallery */
 
 		/* gallery caption styles */
 		.gallery-caption {}
@@ -984,7 +1022,7 @@ article {
 
 	.widgettitle {
 		border-bottom: 1px solid #cacaca;
-		margin-bottom: .75em;
+		margin-bottom: .55em;
 		margin-top: 0;
 		box-shadow: 0 1px 0 rgba(255,255,255,.3);
 	}
@@ -1008,6 +1046,9 @@ article {
 			}
 
 		}
+		p {
+			margin: 0 0 20px 0;
+		}
 
 	}
 
@@ -1018,17 +1059,22 @@ article {
 .footer {
 	border-top: 1px solid #ccc;
 	background-color: rgba(194,194,194,0.26);
-	box-shadow: 3px 4px 1px rgba(0,0,0,0.07) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
 	clear: both;
 	padding: 20px 0 100px;
 	margin-top: 100px;
-	
 	#inner-footer {
 	}
 	nav {
-		
+		float: left;
+		width: 100%;
 		ul.nav {
+			float: left;
+			width: 100%;
+			margin: 0;
 			li {
+				
+				margin: 10px 0;
 				a {}
 
 				&:first-child {}
@@ -1059,7 +1105,11 @@ article {
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		float: left;
+		width: 100%;
+		margin: 0;
+	}
 
 	/**
  * Responsive WordPress Core Theme Styles

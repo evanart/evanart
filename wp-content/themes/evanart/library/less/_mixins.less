@@ -282,7 +282,7 @@ BUTTONS
 // Layout
 
 .AlphaBox {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 1px solid rgb(202, 202, 202);
   margin: 0 0 1.5em 0;
   background-color: rgba(255,255,255,.7);
@@ -324,4 +324,16 @@ BUTTONS
   border: 1px solid #b16615;
   background: @textureGamma;
   padding: 10px;
+}
+
+
+.Button {
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+  margin-bottom: 20px;
+    &:hover {
+      color: #fff;
+      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+      text-decoration: none;
+    }
 }
