@@ -212,17 +212,22 @@ h5, .h5 {
 			width: 100%;
 			margin: 30px 0 20px;
 			text-align: center;
-			-webkit-transition: text-shadow 0.4s, color 0.9s;
-			-moz-transition: text-shadow 0.4s,  color 0.9s;
-			-ms-transition: text-shadow 0.4s,  color 0.9s;
-			-o-transition: text-shadow 0.4s, color 0.9s;
+			position: relative;
+			top: 0;
+			-webkit-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
+			-moz-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
+			-ms-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
+			-o-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
 			transition: text-shadow 0.4s, color 0.9s;
+
 				&:hover {
-					text-shadow:  0 1px 0 #dd9950, 0 0 10px #fff;
-					
+					text-shadow:  0 -1px 0 #dd9950,  0 -2px 0 #dd9950,  0 -3px 0 #dd9950,  0 -4px 0 #dd9950,  0 -5px 0 #dd9950, 0 -5px 30px #fff;
+					top: 5px;
 				}
 				a {
-					
+					&:hover {
+						color: rgb(153, 28, 28);
+					}
 				}
 			
 		}
@@ -328,7 +333,7 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
-
+			
 			li {
 
 				a {
@@ -519,6 +524,12 @@ and more scalable.
 				margin: 0 0 1.5em 0;
 				max-width: 100%;
 				height: auto;
+			}
+			
+			a {
+				img {
+					box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+				}
 			}
 
 			/*
@@ -1042,6 +1053,13 @@ article {
 
 				/* deep nesting */
 				ul {}
+				ul.children {
+					list-style: circle;
+					padding-left: 20px;
+					li {
+						padding-left: 0px;
+					}
+				}
 
 			}
 
@@ -1273,4 +1291,26 @@ img[class*="wp-image-"],
       height: auto;
    }
 
+}
+
+#imageDataContainer {
+	font-family: @sans-serif !important; 
+	font-size: 100% !important;
+font-weight: 400 !important;
+color: #565656 !important;
+}
+#titleText {
+	font-weight: 400 !important;
+}
+
+#captionText {
+	font-weight: 400 !important;
+	font-style: italic;
+	font-size: .9em !important;
+}
+
+#infscr-loading {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
 }
