@@ -3,8 +3,8 @@
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
-			
-				    <div id="main" class="ninecol first clearfix" role="main">
+				<?php get_sidebar(); ?>
+				    <div id="main" class="ninecol last clearfix" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -63,7 +63,7 @@
 			
 				    </div> <!-- end #main -->
     
-				    <?php get_sidebar(); ?>
+				    
 				    
 				</div> <!-- end #inner-content -->
     
