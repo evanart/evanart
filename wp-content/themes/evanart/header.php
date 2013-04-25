@@ -52,7 +52,6 @@
 	      
 	      </script>
 		<!-- end analytics -->
-		
 	</head>
 	
 	<body <?php body_class(); ?>>

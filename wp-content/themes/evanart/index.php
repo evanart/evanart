@@ -4,7 +4,7 @@
 			
 				<div id="inner-content" class="wrap clearfix">
 				<?php get_sidebar(); ?>
-				    <div id="main" class="ninecol last clearfix" role="main">
+				    <div id="main" class="twelvecol first clearfix" role="main">
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

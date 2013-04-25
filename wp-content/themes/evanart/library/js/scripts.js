@@ -106,3 +106,10 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+
+
+/*! Custom Stuff for Waypoints.js
+*/
+
+
