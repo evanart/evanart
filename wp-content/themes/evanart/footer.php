@@ -17,14 +17,7 @@
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#acc-menu2').AccordionImageMenu();
-	$("body").addClass("myClass yourClass");
-	.alert("this!");
-    });
-
-</script>
+	
 
 	</body>
 
