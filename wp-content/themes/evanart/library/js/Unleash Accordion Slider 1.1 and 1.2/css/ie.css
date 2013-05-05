@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.caption {
+	position:absolute;
+	padding:20px;
+	left:0;
+ background:none;
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66010101,endColorstr=#66010101);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66010101,endColorstr=#66010101);
+zoom: 1;
+}
+.caption_3 {
+	background:none;
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);
+zoom: 1;
+}

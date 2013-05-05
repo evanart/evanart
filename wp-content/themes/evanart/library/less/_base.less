@@ -34,6 +34,8 @@ tall images should be: max height 800
 square images should be: max width & height: 700
 *******/
 
+
+
 /*********************
 01. GENERAL STYLES
 *********************/
@@ -43,7 +45,7 @@ body {
 	font-size: 100%;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #565656;
+	color: @evanart-text;
 	background: url(../images/bgTexture.gif);
 	margin:10px 0;
 	box-shadow: 0 0 30px rgba(0,0,0,.29);
@@ -200,58 +202,11 @@ h5, .h5 {
 *********************/
 
 .header {
-	#inner-header {}
-	
-	#heading-container {
-		float: left;
-		width: 100%;
-		#logo {
-			font-size: 6em;
-			line-height: .6em;
-			text-shadow:  0 1px 0 #dd9950,  0 2px 0 #dd9950,  0 3px 0 #dd9950,  0 4px 0 #dd9950,  0 5px 0 #dd9950, 0 5px 30px #fff;
-			width: 100%;
-			margin: 30px 0 20px;
-			text-align: center;
-			position: relative;
-			top: 0;
-			-webkit-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
-			-moz-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
-			-ms-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
-			-o-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
-			transition: text-shadow 0.4s, color 0.9s;
-
-				&:hover {
-					text-shadow:  0 -1px 0 #dd9950,  0 -2px 0 #dd9950,  0 -3px 0 #dd9950,  0 -4px 0 #dd9950,  0 -5px 0 #dd9950, 0 -5px 30px #fff;
-					top: 5px;
-				}
-				a {
-					&:hover {
-						color: rgb(153, 28, 28);
-					}
-				}
-			
-		}
-		
-		.site-desciption {
-			font-weight: 400;
-			margin: 0 0 35px 0;
-			color: #fff;
-			//font-style: italic;
-			font-size: 1.8em;
-			text-shadow:  0 1px 0 #dd9950, 0 2px 0 #dd9950;
-			text-align: center;
-			color: #ab3030;
-			width: 100%;
-		}
-	}
-		
 	nav {
-		
 		.TextureBoxAlpha;
 		width:100%;
 		padding: 0;
-		float: left;
-		margin: 0;
+		margin: 0 0 20px 0;
 			ul.nav.top-nav {
 				width: 100%;
 				float: left;
@@ -259,7 +214,9 @@ h5, .h5 {
 				li {
 					
 					a {
-						font-size: 1.1em;
+					padding: 10px 20px 9px;
+					box-shadow: none;
+					font-size: 1.1em;
 						&:hover {
 							color: #fff;
 						}
@@ -271,6 +228,63 @@ h5, .h5 {
 				}
 			}
 	}
+	
+	
+	#inner-header {}
+	
+	#heading-container {
+		float: left;
+		width: 100%;
+		
+		#logo {
+			float: left;
+			width: 100%;
+			text-align: center;
+			padding: 20px 0;
+			img {
+			
+			}
+			&:hover {
+				
+			}
+			//font-size: 6em;
+			//line-height: .6em;
+			//text-shadow:  0 1px 0 #ab3030,  0 2px 0 #ab3030,  0 3px 0 #ab3030,  0 4px 0 #ab3030,  0 5px 0 #ab3030;
+			//width: 100%;
+			//margin: 30px 0 20px;
+			//text-align: center;
+			//position: relative;
+			//top: 0;
+			//-webkit-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
+			//-moz-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
+			//-ms-transition: text-shadow 0.4s,  color 0.9s, top 0.4s;
+			//-o-transition: text-shadow 0.4s, color 0.9s, top 0.4s;
+			//transition: text-shadow 0.4s, color 0.9s;
+
+				//&:hover {
+				//	text-shadow: none;
+				//}
+			
+			
+			
+		}
+		
+		
+	}
+	
+	.site-desciption {
+			font-weight: 400;
+			margin: 0 0 35px 0;
+			color: #fff;
+			//font-style: italic;
+			font-size: 1.8em;
+			//text-shadow:  0 1px 0 #dd9950, 0 2px 0 #dd9950;
+			text-align: center;
+			color: #ab3030;
+			width: 100%;
+		}
+		
+	
 }
 
 
@@ -447,7 +461,9 @@ and more scalable.
 		
 		/* general post style */
 		article.page {
-			.AlphaBox;
+			&.static-page {
+				.AlphaBox;
+			}
 			//padding: 10px 20px;
 		}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */
@@ -1321,4 +1337,84 @@ color: #565656 !important;
 	text-align: center;
 	display: inline-block;
 	margin: 20px auto;
+}
+
+
+/*********************
+14. Landing Page Specific
+*********************/
+
+.landing-page {
+	.AlphaBox;
+}
+
+h1 {
+	&.intro-text {
+		text-align: center;
+		font-size: 2em;
+		line-height: 1.25em;
+		margin-bottom: 1em;
+	}
+	
+}
+
+.imageroll {
+	
+}
+
+
+a {
+	&.category-callout {
+		text-decoration: none;
+		float: left;
+		width: 100%;
+		margin-bottom: 10px;
+		h1 {
+			color: #fff;
+			&:hover {
+				color: #fff;
+			}
+		}
+		h2 {
+			line-height: 1.1em;
+			text-shadow: 1px 1px 0 rgba(255,255,255,.2);
+		}
+		p {
+			color: @evanart-text;
+			text-align: right;
+			font-size: .9em;
+		}
+		.callout-box {
+			float: left;
+			width: 100%;
+			margin-bottom: 7px;
+		}
+		
+		&.professional {
+			h1 {
+				text-shadow: 2px 2px 0 rgba(171,48,48,.9);
+			}
+			.callout-box {
+				.TextureBoxGamma;
+				padding: 10px 10px 15px;
+			}
+		}
+		
+		&.personal {
+			
+			.callout-box {
+				.TextureBoxBeta;
+				padding: 10px 10px 20px;
+			}
+		}
+		
+	}
+}
+
+/*********************
+15. For Dev
+*********************/
+
+body {
+	border: 1px solid blue;
 }

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unleash Accordion Slider</title>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/unleash.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.snippet.css" />
+
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css' />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" />
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.snippet.min.js"></script>
+<script type="text/javascript" src="js/jquery.unleash.min.js"></script> 
+ 
+ <script type="text/javascript">
+    $(window).load(function() {
+			
+			$(document).ready(function(){
+$("pre.htmlCode").snippet("html");
+    // Finds <pre> elements with the class "htmlCode"
+    // and snippet highlights the HTML code within.
+$("pre.styles").snippet("css",{style:"greenlcd"});
+    // Finds <pre> elements with the class "styles"
+    // and snippet highlights the CSS code within
+    // using the "greenlcd" styling.
+$("pre.js").snippet("javascript",{style:"ide-eclipse"});
+    // Finds <pre> elements with the class "js"
+    // and snippet highlights the JAVASCRIPT code within
+    // using a random style from the selection of 39
+    // with a transparent background
+    // without showing line numbers.
+});
+    }); 
+    </script>
+    
+<script type="text/javascript" src="js/jquery.animation.easing.js"></script> 
+
+
+
+</head>
+
+<body>
+<div class="top"></div>
+<div class="wrap">
+
+<div id="logo">
+<a href="index.html"><img class="logo" alt="logo" src="images/logo.png" /></a>
+</div>
+
+<h3 style="font-family:Verdana, Geneva, sans-serif; font-size:18px; margin-bottom:40px;">Getting Started:</h3>
+
+<p>First, in your head section, you need to include 'jQuery', 'jquery.unleash.min.js', 'unleash.css' and in case you want to use special easing methods include <a href="http://www.lemonsanver.com/jQuery/easingAnimationPlugin.html">Lemonsanver Easing Plugin</a> and if you will use 'rotate' animation include <a href="https://github.com/zachstronaut/jquery-animate-css-rotate-scale">zachstronaut </a> plugin which have 2 js files.</p>
+
+<img style="margin-bottom:30px; margin-top:30px;" class="logo" alt="logo" src="images/code_1.jpg" />
+
+<p> Then in your body add a code that looks like this with your own classes names</p>
+<img style="margin-bottom:30px; margin-top:30px;" class="logo" alt="logo" src="images/code_2.jpg" />
+
+<p> Finally, in the head section trigger your plugin, using $(window).load() function avoid using $(document).ready()</p>
+
+<pre class="js">
+$(window).load(function() {
+$('#outer').unleash();
+        });
+</pre>
+
+<p>To add your own options; here are the list of options that you can change:</p>
+<pre class="js">
+$(window).load(function() {
+        $('#outer').unleash({ //make sure that $('#outer') is the same as your main html class.
+			   duration: 700, //The speed of the slide.
+               childClassName: '.box', //The class name of the slide contents.
+               captionClassName: '.caption_1', //The class name of the caption.
+               SliderWidth: '960px', //Width of the whole slider.
+               SliderHeight: '300px', //Height of the whole slider.
+               width: 600, //Width of the selected slide. (without px)
+               Event: "hover", //Event for expanding slide (hover or click).
+               easing: "quadEaseOut", //Easing for slide.
+               captionEasing: "backEaseInOut", //Easing for caption.
+               CollapseOnMouseLeave: true, //Leave the last selected slide open when the mouse leaves or not.
+               CaptionAnimation: "opacity" //Caption animation type (pop-up, opacity or rotate).
+			});
+    }); 
+</pre>
+
+<p style="margin:30px 0px;">And you can style the captions as you like from the css file :)</p>
+
+<h3 style="font-family:Verdana, Geneva, sans-serif; font-size:16px; margin-bottom:10px;">List of available easings:</h3>
+  <pre><p style="line-height:1.6em;">backEaseIn  backEaseOut  backEaseInOut  bounceEaseIn  bounceEaseOut  circEaseIn  circEaseOut  circEaseInOut   cubicEaseIn  cubicEaseOut  
+cubicEaseInOut  elasticEaseIn  elasticEaseOut  expoEaseIn  expoEaseOut  expoEaseInOut  quadEaseIn   quadEaseOut   quadEaseInOut  quartEaseIn   
+quartEaseOut   quartEaseInOut  quintEaseIn  quintEaseOut quintEaseInOut  sineEaseIn  sineEaseOut  sineEaseInOut</p> </pre>
+
+<div id="credit">
+<p>© All rights reserved 2012 - Unleash - Designed by by <a href="http://themeforest.net/user/alialaa">Ali Alaa</a></p>
+</div>
+
+
+</div>
+
+</body>
+</html>

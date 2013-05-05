@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unleash Accordion Slider</title>
+<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<link rel="stylesheet" type="text/css" href="css/unleash.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.unleash.min.js"></script> 
+<script type="text/javascript" src="js/jquery.animation.easing.js"></script> 
+
+ <script type="text/javascript">
+    $(window).load(function() {
+        $('#outer').unleash({
+			    duration: 700,
+				childClassName: '.box',
+				captionClassName: '.caption_home',
+                SliderWidth: '940px',
+                SliderHeight: '300px',
+                width: 590,
+                Event: "hover",
+                easing:  "quadEaseOut",
+				captionEasing:  "backEaseInOut",
+                CollapseOnMouseLeave: true,
+                CaptionAnimation: "pop-up"
+			});
+    }); 
+    </script>
+
+</head>
+
+<body>
+<div class="banner">
+<h3><a href="index 1.2.html">Version 1.2 demo: Improved response + open first slider on load</a></h3>
+</div>
+<div class="top"></div>
+<div class="wrap">
+
+<div id="logo">
+<a href="index.html"><img class="logo" alt="logo" src="images/logo.png" /></a>
+</div>
+
+
+ <div id="outer">
+
+
+<div class="box">
+
+<img src="images/b1.jpg" />
+<div class="caption_home">
+<img src="images/b11.png" />
+</div>
+</div>
+<div class="box">
+
+<img src="images/b2.jpg"  />
+<div class="caption_home">
+<img src="images/b22.png" />
+</div>
+</div>
+<div class="box">
+
+<img src="images/b3.jpg"  />
+<div class="caption_home">
+<img src="images/b33.png" />
+</div>
+</div>
+
+<div class="box">
+
+<img src="images/b4.jpg" />
+<div class="caption_home">
+<img src="images/b44.png" />
+</div>
+</div>
+
+<div class="box">
+
+<img src="images/b5.jpg" />
+<div class="caption_home">
+<img src="images/b55.png" />
+</div>
+</div>
+
+<div class="box">
+
+<img src="images/b6.jpg" />
+<div class="caption_home">
+<img src="images/b66.png" />
+</div>
+</div>
+</div>
+<div><img class="logo" alt="logo" src="images/shadow_2.png" /></div>
+
+<div id="intro">
+<img class="logo" alt="logo" src="images/text.png" />
+</div>
+
+<div id="content">
+
+<div class="half">
+<h3>Features:</h3>
+<ul>
+<li>Easy to style.</li>
+<li>Multiple pre-styled Captions.</li>
+<li>Multiple captions animations.</li>
+<li>Choose among multiple easing methods.</li> 
+<li>Ability to add multiple sliders in one page without interfering.</li> 
+<li>Expand by hover or click events.</li> 
+<li>Easy to set up with Detailed documentation.</li>
+</ul>
+</div>
+
+<div class="half">
+<h3>Comptability<sup>*</sup>:</h3>
+<img style="margin-top:5px; margin-bottom:20px;" class="logo" alt="logo" src="images/browsers.png" />
+<p>*  Tested using latest versions of each browser.</p>
+<p>** Some css 3 styling and rotation animation won't work with ie.</p>
+</div>
+
+<div class="half last">
+<h3>ChangeLog:</h3>
+<ul>
+<li>version 1.0.0 [DD/MM/YYYY]</li>
+</ul>
+</div>
+
+</div>
+
+<div id="buttons">
+<a href="#"><span class="pur"></span></a>
+<a href="examples.html"><span class="exa"></span></a>
+</div>
+
+<div id="credit">
+<p>© All rights reserved 2012 - Unleash - Designed by by <a href="http://themeforest.net/user/alialaa">Ali Alaa</a></p>
+</div>
+
+
+</div>
+
+</body>
+</html>
