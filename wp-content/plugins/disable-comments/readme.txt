@@ -17,19 +17,27 @@ Additionally, comment-related items can be removed from the Dashboard, Widgets, 
 
 If you come across any bugs or have suggestions, please use the plugin support forum or contact me at [rayofsolaris.net](http://rayofsolaris.net). I can't fix it if I don't know it's broken! Please check the [FAQ](http://wordpress.org/extend/plugins/disable-comments/faq/) for common issues.
 
+Want to contribute? Here's the [GitHub development repository](https://github.com/solarissmoke/disable-comments).
+
+Thanks to the following people for contributing translations of this plugin: German - [Christian Foellmann](http://foe-services.de).
+
 == Frequently Asked Questions ==
+
+= What is "persistent mode"? =
+
+By default, the plugin does not make any persistent changes to your posts - it just dynamically closes comments on them. This means that you can use the plugin temporarily and restore comment statuses when you disable it. If the plugin works in this mode, then I recommend that you don't use persistent mode.
+
+Unfortunately some themes do not properly check the comment status of posts, and the plugin in default mode will have no effect with them (comments will still appear to be open). To fix this, switch to persistent mode. Note however that this will make persistent changes: **comments will remain closed even if you later disable the plugin** (you can always reopen them manually, of course).
+
+**I repeat, using persistent mode will make changes to your database. DO NOT USE IT IF YOU WANT TO DISABLE COMMENTS TEMPORARILY.**
+
+**Network Administrators**: If you want to prevent individual site administrators from using persistent mode, hook into the `disable_comments_allow_persistent_mode` filter and return `false`. This will prevent the option from being visible to site administrators.
 
 = Nothing happens after I disable comments on all posts - comment forms still appear when I view my posts. =
 
-This is because your theme is not checking the comment status of posts in the correct way. The solution is to switch the plugin to permanent mode (the last option on the plugin settings page).
+This is because your theme is not checking the comment status of posts in the correct way. The solution is to switch the plugin to persistent mode (the last option on the plugin settings page).
 
 You may like to point your theme's author to [this explanation](http://rayofsolaris.net/blog/2012/how-to-check-if-comments-are-allowed-in-wordpress) of what they are doing wrong, and how to fix it.
-
-= What is "permanent mode"? =
-
-By default, the plugin does not make any permanent changes to your posts - it just dynamically closes comments on them. This means that you can use the plugin temporarily without permanently altering the comment status of all your posts. If the plugin works in this mode, then I recommend that you don't use permanent mode.
-
-Unfortunately some themes do not properly check the comment status of posts, and the plugin in default mode will have no effect with them (comments will still appear to be open). To fix this, switch to permanent mode. Note however that this will make permanent changes: **comments will remain closed even if you later disable the plugin** (you can always reopen them manually, of course).
 
 = How can I remove the text that says "comments are closed" at the bottom of articles where comments are disabled? =
 
@@ -61,6 +69,11 @@ The plugin provides the option to **completely disable the commenting feature in
 
 == Changelog ==
 
+= 0.9 =
+* Added gettext support and German translation.
+* Added links to GitHub development repo.
+* Allow network administrators to prevent the use of persistent mode.
+
 = 0.8 =
 * Remove X-Pingback header when comments are completely disabled.
 * Disable comment feeds when comment are completely disabled.
@@ -71,7 +84,7 @@ The plugin provides the option to **completely disable the commenting feature in
 * Simplified settings page.
 
 = 0.6 = 
-* Add "permanent mode" to deal with themes that don't use filterable comment status checking.
+* Add "persistent mode" to deal with themes that don't use filterable comment status checking.
 
 = 0.5 =
 * Allow temporary disabling of comments site-wide by ensuring that original comment statuses are not overwritten when a post is edited.

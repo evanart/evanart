@@ -122,7 +122,7 @@ $format_src = '
                 	
                     printf($format_src,$index,
                 		_('Media'),_('Query'),_('Fallback Image'),
-                		$format->media,$format->query,($format->fallback) ? 'checked="checked"' : ''
+                		$format->media,$format->query,(isset($format->fallback) && $format->fallback) ? 'checked="checked"' : ''
                 	);
 				} //foreach ?>
             </div>

@@ -12,11 +12,7 @@ Template Name: Landing Page
 			<div id="content">
 			
 				<div id="inner-content" class="wrap clearfix">
-			
-					
 		
- 
-
 			
 				    <div id="main" class="twelvecol first clearfix" role="main">
 

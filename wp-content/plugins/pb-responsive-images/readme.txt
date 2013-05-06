@@ -3,8 +3,8 @@ Contributors: phenomblue, spacemanspud
 Donate link: http://phenomblue.com/
 Tags: responsive images, polyfill, images
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.3
+Tested up to: 3.5.1
+Stable tag: 1.4
 License: GPLv3 or later
 License URI: http://opensource.org/licenses/gpl-3.0.html GNU General Public License version 3 (GPLv3)
 
@@ -35,6 +35,12 @@ For additional information or help on implementing this plugin, use the "Help" t
 
 == Changelog ==
 
+= 1.4 =
+* Fixes for IE8 compatibility
+* Fixes for warnings in debug mode
+* IIS compatibilty fixes
+* Bug fixes for serving out of a WordPress subdirectory install
+
 = 1.3 =
 * Bug fixes for cross browser compatibility
 * Fixed javascript warning that occasionally occurs in IE7/8
@@ -54,6 +60,9 @@ For additional information or help on implementing this plugin, use the "Help" t
 * Initial public release!
 
 == Upgrade Notice ==
+
+= 1.4 =
+Bug fixes for IE and IIS compatibility, and WordPress debug warnings, and serving out of a WordPress subdirectory install.
 
 = 1.3 =
 Bug fixes for older IE browser compatibility, and specific image high res media queries.
