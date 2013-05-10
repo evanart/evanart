@@ -497,10 +497,18 @@ and more scalable.
 				display: none;
 			}
 			section.entry-content {
-				background: #fff;
-				box-shadow: 0 1px 5px rgba(0,0,0,0.25);
-				padding: 0 15px;
-				margin-bottom: 0;
+				.whiteBox {
+					background: #fff;
+					box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+					padding: 25px;
+					margin-bottom: 0;
+					font-size: 1.1em;
+					a {
+						img {
+							box-shadow: none;
+						}
+					}
+				}
 			}
 			
 			footer.article-footer {
