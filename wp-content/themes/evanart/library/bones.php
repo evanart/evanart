@@ -206,8 +206,8 @@ function bones_theme_support() {
 			'status',            // a Facebook like status update
 			'video',             // video
 			'audio',             // audio
-			'chat',	               // chat transcript
-			'heading'               // section heading
+			'chat'	               // chat transcript
+
 		)
 	);
 

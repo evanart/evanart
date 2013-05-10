@@ -459,6 +459,55 @@ and more scalable.
 			
 		}
 		
+		article.post.category-sectionheading {
+			h1 {
+				font-size: 40px;
+			}
+			h1,
+			h3 {
+				&.h2 {
+					a {
+						font-size: 40px;
+						line-height: 1;
+						color: #fff;
+						
+						
+					}
+				}
+			}
+			&.category-professional-work {
+				.TextureBoxBeta;
+				padding: 25px 40px;
+				
+			}
+			&.category-personal-work {
+				.TextureBoxDelta;
+				padding: 25px 40px;
+			}
+			
+			
+			
+			header.article-header {
+				border-bottom: none;
+				margin: 0;
+				overflow: visible;
+				padding: 0 0 20px 0;
+			}
+			.byline {
+				display: none;
+			}
+			section.entry-content {
+				background: #fff;
+				box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+				padding: 0 15px;
+				margin-bottom: 0;
+			}
+			
+			footer.article-footer {
+				margin:0;
+			}
+		}
+		
 		/* general post style */
 		article.page {
 			&.static-page {
@@ -1366,16 +1415,7 @@ a {
 		float: left;
 		width: 100%;
 		margin-bottom: 10px;
-		h1 {
-			color: #fff;
-			&:hover {
-				color: #fff;
-			}
-		}
-		h2 {
-			line-height: 1.1em;
-			text-shadow: 1px 1px 0 rgba(255,255,255,.2);
-		}
+
 		p {
 			color: @evanart-text;
 			text-align: right;
@@ -1386,25 +1426,19 @@ a {
 			width: 100%;
 			margin-bottom: 7px;
 			padding: 10px 10px 15px;
+			&:hover,
+			&:active {
+				box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3), inset 0 0 30px 10px rgba(255,255,255,.5);
+			}
 		}
 		
 		&.professional {
-			h1 {
-				text-shadow: 2px 2px 0 rgba(171,48,48,.9);
-			}
 			.callout-box {
-				.TextureBoxGamma;
+				.TextureBoxBeta;
 			}
 		}
 		
 		&.personal {
-			h1 {
-				text-shadow: 2px 2px 0 rgba(34,105,62,.9);
-			}
-			h2 {
-				color: #22693e;
-				
-			}
 			.callout-box {
 				.TextureBoxDelta;
 			}
@@ -1414,35 +1448,7 @@ a {
 }
 
 .slider-wrap {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-	height: 250px;
-	box-shadow: 0 1px 5px rgba(0,0,0,.35);
-	margin-bottom: 1.6em;
-	
-	ul {
-		&#slider {
-			li {
-				overflow: visible !important;
-				img {
-					box-shadow: 0 0 5px rgba(0,0,0,.8);
-				}
-				span {
-					background-color: rgba(255,255,255,0.85);
-					position: absolute;
-					bottom: 15px;
-					right: 20px;
-					display: block;
-					font-style: italic;
-					padding: 3px 7px;
-					box-shadow: 2px 2px 0 rgba(0,0,0,.3);
-					font-size: 0.9em;
-				}
-				
-			}
-		}
-	} 
+	display: none;
 }
 
 /*********************

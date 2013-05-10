@@ -53,13 +53,13 @@
 	      </script>
 		
 
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery-ui-1.8.10.custom.min_.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.zaccordion.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/library/js/enquire.min.js"></script>
+	<!--<script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>-->
 	
-	
-	
+
 	 
 
 	
