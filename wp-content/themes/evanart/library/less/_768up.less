@@ -19,7 +19,7 @@ GENERAL STYLES
 
 body {
    margin: 5px;
-   box-shadow: 0 0 30px rgba(0,0,0,.29);
+   .box-shadow(0 0 30px rgba(0,0,0,.29));
    border: 1px solid rgba(255,255,255,.6);
 }
 
@@ -124,11 +124,7 @@ NAVIGATION STYLES
 		
 				a {
 					//border-bottom: 0;
-					-webkit-transition: background 0.2s, margin-top 0.2s;
-					-moz-transition: background 0.2s, margin-top 0.2s;
-					-ms-transition: background 0.2s, margin-top 0.2s;
-					-o-transition: background 0.2s, margin-top 0.2s;
-					transition: background, margin-top 0.2s;
+					.transition(margin-top 0.2s);
 					border-bottom: none;
 		
 					/*
@@ -137,7 +133,7 @@ NAVIGATION STYLES
 					*/
 					&:hover, &:focus {
 						.TextureBoxBeta;
-						box-shadow: 3px 3px 0 rgba(0,0,0,.1) ;
+						.box-shadow(3px 3px 0 rgba(0,0,0,.1));
 						padding: 9px 19px 9px 19px;
 						margin-top: -4px;
 						background-position: center bottom;
@@ -171,7 +167,7 @@ NAVIGATION STYLES
 					border: 1px solid #b16615;
 					background: @textureGamma;
 					background-position: center bottom;
-					box-shadow: 3px 3px 0 rgba(0,0,0,.1) ;
+					.box-shadow(3px 3px 0 rgba(0,0,0,.1));
 					margin-left: -4px;
 					margin-top: -2px;
 					
@@ -413,11 +409,7 @@ a {
 		}
 		p {
 			opacity: 0;
-			-webkit-transition: opacity 0.2s;
-			-moz-transition: opacity 0.2s;
-			-ms-transition: opacity 0.2s;
-			-o-transition: opacity 0.2s;
-			transition: opacity 0.2s;
+			.transition(opacity 0.2s);
 			
 		}
 		&:hover {
