@@ -8,7 +8,7 @@
  * @category Plugin
  * @author Jacob Dunn
  * @link http://www.phenomblue.com/ Phenomblue
- * @version 1.2
+ * @version 1.4
  *
  * -------------------------------------
  *

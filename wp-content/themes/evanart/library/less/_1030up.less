@@ -8,33 +8,111 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop. 
 
 ******************************************************************/
+
+
 body {
    margin: 10px;
-   box-shadow: 0 0 40px rgba(0,0,0,.29);
+   .box-shadow(0 0 40px rgba(0,0,0,.29));
    border: 1px solid rgba(255,255,255,.6);
 }
 .header {
 	#heading-container {
-		.site-desciption {
-			margin: 75px 0 0;
-			width: auto;
+            #logo {
+                width: auto;
+		position: absolute;
 		}
+            
+	    .site-desciption {
+                
+                width: auto;
+               
+            }
 	
+	}
+        
+}
+
+
+.header {
+	nav {
+		margin: 50px 0;
+		ul.nav.top-nav {
+		
+			
+			li {
+				
+		
+				a {
+					
+				}
+                        }
+		} /* end .nav */
+	} /* end nav */
+} /* end .header */
+
+//.ninecol.first {
+//width: 74.30939226%;
+//}
+//
+//.threecol.last {
+//float: right;
+//margin-left: 2.762430939%;
+//width: 22.928176794%;
+//}
+
+
+
+/*********************
+14. Landing Page Specific
+*********************/
+
+
+h1 {
+	&.intro-text {
+		font-size: 2.9em;
+	}
+	
+}
+
+a {
+	&.category-callout {
+		h1 {
+			font-size: 3.2em;
+			&:hover {
+			}
+		}
+		h2 {
+			font-size: 2.2em;
+		}
+		p {
+			
+		}
+		.callout-box {
+		}
+		
+		&.professional {
+			h1 {
+				
+			}
+			.callout-box {
+			}
+		}
+		
+		&.personal {
+			
+			.callout-box {
+				
+			}
+		}
+		
 	}
 }
 
-.ninecol.first {
-width: 74.30939226%;
-}
 
-.threecol.last {
-float: right;
-margin-left: 2.762430939%;
-width: 22.928176794%;
-}
+/*********************
+15. For Dev
+*********************/
 
-.widget {
-    width: 100%;
-    margin: 0 0 20px 0;
-    &:first-child {margin-left: 0;}
-}
+//body {
+//	border: 1px solid orange;
+//}

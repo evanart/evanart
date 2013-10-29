@@ -1,6 +1,9 @@
+
+
+
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: evanart.com
+Author: Evan Robert Miller
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -12,7 +15,7 @@ changing a color or adding CSS3 techniques like box shadow and
 border-radius.
 
 A WORD OF WARNING: It's very easy to overdo it here. Be careful and
-remember less is more. 
+remember less is more.  
 
 ******************************************************************/
 
@@ -64,7 +67,7 @@ http://0to255.com/
 @evanart-red:	    #ab3030;
 @evanart-grey:      #555;
 @evanart-lightred:  #cc8686;
-
+@evanart-text:      #565656;
 
 
 
@@ -80,6 +83,8 @@ http://0to255.com/
 @textureBeta: url(../images/texture_beta.gif) repeat left top #8ecfd0;
 
 @textureGamma: url(../images/texture_gamma.gif) repeat left top #e68e30;
+
+@textureDelta: url(../images/texture_delta.gif) repeat left top #75ac8c;
 
 /*
 Here's a great tutorial on how to
@@ -174,11 +179,11 @@ don't use the shorthand to define *different* corners.
 USAGE: .border-radius(4px); 
 
 */
-.border-radius(@radius: 4px) {
-  -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-          border-radius: @radius;
-}
+//.border-radius(@radius: 4px) {
+//  -webkit-border-radius: @radius;
+//     -moz-border-radius: @radius;
+//          border-radius: @radius;
+//}
 
 
 /*********************
@@ -186,13 +191,13 @@ TRANISTION
 *********************/
 
 /* .transition(all,2s); */
-.transition(@what: all, @time: 0.2s, @transition: ease-in-out) {
-	-webkit-transition: @what @time @transition;
-	-moz-transition:    @what @time @transition;
-	-ms-transition:     @what @time @transition;
-	-o-transition:      @what @time @transition;
-	transition:         @what @time @transition;
-}
+//.transition(@what: all, @time: 0.2s, @transition: ease-in-out) {
+//	-webkit-transition: @what @time @transition;
+//	-moz-transition:    @what @time @transition;
+//	-ms-transition:     @what @time @transition;
+//	-o-transition:      @what @time @transition;
+//	transition:         @what @time @transition;
+//}
 
 /*********************
 CSS3 GRADIENTS
@@ -201,130 +206,164 @@ really slow down your CSS. Don't overdo it.
 *********************/
 
 /* .css-gradient(#dfdfdf,#f8f8f8); */
-.css-gradient(@from: #dfdfdf, @to: #f8f8f8) {
-	background-color: @to;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
-	background-image: -webkit-linear-gradient(top, @from, @to);
-	background-image: -moz-linear-gradient(top, @from, @to);
-	background-image: -o-linear-gradient(top, @from, @to);
-	background-image: linear-gradient(to bottom, @from, @to);
-}
+//.css-gradient(@from: #dfdfdf, @to: #f8f8f8) {
+//	background-color: @to;
+//	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+//	background-image: -webkit-linear-gradient(top, @from, @to);
+//	background-image: -moz-linear-gradient(top, @from, @to);
+//	background-image: -o-linear-gradient(top, @from, @to);
+//	background-image: linear-gradient(to bottom, @from, @to);
+//}
 
 /*********************
 BOX SHADOW
 *********************/
 
 /* .boxShadow(0,0,4px,0,#444); */
-.boxShadow(@x: 0, @y: 0, @radius: 4px, @spread: 0, @color: rgba(0,0,0,0.5)) when (isnumber(@x)) {
-	-webkit-box-shadow: @x @y @radius @spread @color;
-	   -moz-box-shadow: @x @y @radius @spread @color;
-			box-shadow: @x @y @radius @spread @color; 
-}
+//.boxShadow(@x: 0, @y: 0, @radius: 4px, @spread: 0, @color: rgba(0,0,0,0.5)) when (isnumber(@x)) {
+//	-webkit-box-shadow: @x @y @radius @spread @color;
+//	   -moz-box-shadow: @x @y @radius @spread @color;
+//			box-shadow: @x @y @radius @spread @color; 
+//}
 /* .boxShadow(none); */
-.boxShadow(@x: none) when (iskeyword(@x)) {
-	-webkit-box-shadow: @x;
-	   -moz-box-shadow: @x;
-			box-shadow: @x; 
-}
+//.boxShadow(@x: none) when (iskeyword(@x)) {
+//	-webkit-box-shadow: @x;
+//	   -moz-box-shadow: @x;
+//			box-shadow: @x; 
+//}
 
 /*********************
 BUTTONS
 *********************/
 
-.button, .button:visited {
-	border: 1px solid darken(@bones-pink, 13%);
-	border-top-color: darken(@bones-pink, 7%);
-	border-left-color: darken(@bones-pink, 7%);
-	padding: 4px 12px;
-	color: @white;
-	display: inline-block;
-	font-size: 11px;
-	font-weight: 400;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
-	cursor: pointer;
-	margin-bottom: 20px;
-	line-height: 21px;
-	.transition();
-	.border-radius(4px);
-	.css-gradient(@bones-pink,darken(@bones-pink, 5%));
-
-	&:hover, &:focus {
-		color: @white;
-	  border: 1px solid darken(@bones-pink, 13%);
-	  border-top-color: darken(@bones-pink, 20%);
-	 	border-left-color: darken(@bones-pink, 20%);
-		.css-gradient(darken(@bones-pink, 5%),darken(@bones-pink, 10%));
-	}
-	
-	&:active {
-		.css-gradient(darken(@bones-pink, 5%),@bones-pink);
-	}	
-}
-
-.blue-button, .blue-button:visited {
-	border-color: darken(@bones-blue, 10%);
-	text-shadow: 0 1px 1px darken(@bones-blue, 10%);
-	.css-gradient( @bones-blue, darken(@bones-blue, 5%) );
-	-webkit-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
-       -moz-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
-   	        box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
-	&:hover, &:focus {
-		border-color: darken(@bones-blue, 15%);
-		.css-gradient( darken(@bones-blue, 4%), darken(@bones-blue, 10%) );
-	}
-	&:active {
-		.css-gradient( darken(@bones-blue, 5%), @bones-blue );
-	}
-}
+//.button, .button:visited {
+//	border: 1px solid darken(@bones-pink, 13%);
+//	border-top-color: darken(@bones-pink, 7%);
+//	border-left-color: darken(@bones-pink, 7%);
+//	padding: 4px 12px;
+//	color: @white;
+//	display: inline-block;
+//	font-size: 11px;
+//	font-weight: 400;
+//	text-decoration: none;
+//	text-shadow: 0 1px rgba(0,0,0, .75);
+//	cursor: pointer;
+//	margin-bottom: 20px;
+//	line-height: 21px;
+//
+//	.border-radius(4px);
+//	.css-gradient(@bones-pink,darken(@bones-pink, 5%));
+//
+//	&:hover, &:focus {
+//		color: @white;
+//	  border: 1px solid darken(@bones-pink, 13%);
+//	  border-top-color: darken(@bones-pink, 20%);
+//	 	border-left-color: darken(@bones-pink, 20%);
+//		.css-gradient(darken(@bones-pink, 5%),darken(@bones-pink, 10%));
+//	}
+//	
+//	&:active {
+//		.css-gradient(darken(@bones-pink, 5%),@bones-pink);
+//	}	
+//}
+//
+//.blue-button, .blue-button:visited {
+//	border-color: darken(@bones-blue, 10%);
+//	text-shadow: 0 1px 1px darken(@bones-blue, 10%);
+//	.css-gradient( @bones-blue, darken(@bones-blue, 5%) );
+//	-webkit-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+//       -moz-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+//   	        box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+//	&:hover, &:focus {
+//		border-color: darken(@bones-blue, 15%);
+//		.css-gradient( darken(@bones-blue, 4%), darken(@bones-blue, 10%) );
+//	}
+//	&:active {
+//		.css-gradient( darken(@bones-blue, 5%), @bones-blue );
+//	}
+//}
 
 
 // Layout
 
 .AlphaBox {
   padding: 15px 20px;
-  border: 1px solid rgb(202, 202, 202);
+  border: 1px solid #cacaca;
   margin: 0 0 1.5em 0;
   background-color: rgba(255,255,255,.7);
-  box-shadow: 3px 4px 1px rgba(0,0,0,.07), -1px -1px 0 rgba(255,255,255,.4);
+  .box-shadow(3px 4px 1px rgba(0,0,0,.07), -1px -1px 0 rgba(255,255,255,.4));
 }
 
 .BetaBox {
   padding: 10px;
-  border: 1px solid rgb(185, 185, 185);
+  border: 1px solid #b9b9b9;
   margin: 0 0 1.5em 0;
   background-color: rgba(235, 235, 235, 0.7);
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.07) inset,1px 1px 0 rgba(255, 255, 255, 0.49);
+  .box-shadow(inset 3px 4px 1px rgba(0,0,0,0.07), 1px 1px 0 rgba(255, 255, 255, 0.49));
   padding: 10px 10px 10px 15px;
 }
 
 .RedBox {
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9);
+  .box-shadow(3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9));
   border: 1px solid rgb(172, 101, 101);
   background-color: @evanart-lightred;
   padding: 10px;
 }
 
 .TextureBoxAlpha {
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
+  .box-shadow(3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3));
   border: 1px solid #7a1313;
   background: @textureAlpha;
   padding: 10px;
+
 }
 
 .TextureBoxBeta {
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
-  border: 1px solid #62a5a6;
+  .box-shadow(3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3));
+  border: 1px solid #44a5ca;
   background: @textureBeta;
   padding: 10px;
+  h1,
+  h3.h2 {
+    color: #fff;
+    text-shadow: 3px 3px 0 rgba(0,0,0,.3);
+    &:hover {
+      color: #fff;
+    }
+  }
+  h2 {
+    color:#2279aa;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.3);
+  }
 }
 
 .TextureBoxGamma {
-  box-shadow: 3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);
+  .box-shadow(3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3));
   border: 1px solid #b16615;
   background: @textureGamma;
   padding: 10px;
 }
+
+
+.TextureBoxDelta {
+  .box-shadow(3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3));
+  border: 1px solid #398b5b;
+  background: @textureDelta;
+  padding: 10px;
+  h1,
+  h3.h2 {
+    color: #fff;
+    text-shadow: 3px 3px 0 rgba(0,0,0,.3);
+    &:hover {
+      color: #fff;
+    }
+  }
+  h2 {
+    color:#22693e;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.3);
+  }
+}
+
 
 
 .Button {
@@ -333,7 +372,7 @@ BUTTONS
   margin-bottom: 20px;
     &:hover {
       color: #fff;
-      box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+      .box-shadow(1px 2px 5px rgba(0,0,0,0.1));
       text-decoration: none;
     }
 }

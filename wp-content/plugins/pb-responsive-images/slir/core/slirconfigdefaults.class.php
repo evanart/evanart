@@ -210,7 +210,15 @@ class SLIRConfigDefaults
     }
 
     if (self::$documentRoot === null) {
-      self::$documentRoot = rtrim(realpath(preg_replace('`' . preg_quote($_SERVER['PHP_SELF']) . '$`', '', str_replace('\\', '/', $_SERVER['SCRIPT_FILENAME']))), '/');
+      if(getenv('DOCUMENT_ROOT') && strpos(realpath(__FILE__),realpath(getenv('DOCUMENT_ROOT'))) === 0){
+        self::$documentRoot = getenv('DOCUMENT_ROOT');
+      }else{
+        $urlPath = preg_replace('/^\/~[^\/]+/','',dirname(@$_SERVER['PHP_SELF']));
+        $serverPath = str_replace(DIRECTORY_SEPARATOR, '/', dirname(__FILE__));
+        self::$documentRoot = preg_replace('#'.preg_quote($urlPath).'.*$#','',$serverPath);
+      }
+
+      self::$documentRoot == realpath(self::$documentRoot);
     }
 
     if (self::$pathToSLIR === null) {

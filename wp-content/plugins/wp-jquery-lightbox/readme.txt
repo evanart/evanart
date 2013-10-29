@@ -4,7 +4,7 @@ Donate link: http://amzn.com/w/2QB6SQ5XX2U0N
 Tags: lightbox, jquery, nodal, image, display, ulfben
 Requires at least: 3.5.1
 Tested up to: 3.5.1
-Stable tag: 1.4.1
+Stable tag: 1.4.5
 License: GPLv2 or later
 
 A drop-in replacement for Lightbox 2 and similar plugins, shedding the bulk of Prototype and Scriptaculous. Improved for mobile devices.
@@ -29,6 +29,17 @@ You can browse images with your keyboard: Arrows, P(revious)/N(ext) and X/C/ESC 
 If you value [my plugins](http://profiles.wordpress.org/users/ulfben/), please help me out by [Flattr-ing them](http://flattr.com/thing/367557/Support-my-WordPress-plugins)! Or perhaps [send me a book](http://www.amazon.com/gp/registry/wishlist/2QB6SQ5XX2U0N/105-3209188-5640446?reveal=unpurchased&filter=all&sort=priority&layout=standard&x=11&y=10)? Used ones are fine! :)
 
 *[//Ulf Benjaminsson](http://profiles.wordpress.org/users/ulfben/)*
+
+= 1.4.5 (2013-06-09) =
+* Fit to screen edge on low rez displays (<500px)
+* Added global setting to hide title & caption
+* Reduced the amount of code running for each image shown
+* Updated German translation (thanks [Niko23](http://wordpress.org/support/topic/translation-of-client-side-text?replies=5#post-4230050))
+* Fix: swipe direction
+* Fix: slideshow now waits for images to display before starting timer.
+* Fix: support for latest jQuery
+* Fix: WordPress encoding wrong quote mark in captions, causing duplicate texts to display.
+
 
 = 1.4.1 (2013-02-03) =
 * Added swipe gestures on touch devices
@@ -128,6 +139,17 @@ Lastly:
 Still have problems? Post a link and describe what issue you're having, and tell us what of these steps you've already tried.
 
 == Changelog ==
+= 1.4.5 (2013-06-09) =
+* Fit to screen edge on low rez displays (<500px)
+* Added global setting to hide title & caption
+* Reduced the amount of code running for each image shown
+* Updated German translation (thanks [Niko23](http://wordpress.org/support/topic/translation-of-client-side-text?replies=5#post-4230050))
+* Fix: swipe direction
+* Fix: slideshow now waits for images to display before starting timer.
+* Fix: support for latest jQuery
+* Fix: WordPress encoding wrong quote mark in captions, causing duplicate texts to display.
+
+
 = 1.4.1 (2013-02-03) =
 * Added swipe gestures on touch devices
 * Added slideshow 
@@ -206,6 +228,9 @@ Still have problems? Post a link and describe what issue you're having, and tell
 * Release.
 
 == Upgrade Notice ==
+= 1.4.5 (2013-06-09) =
+Support latest jQuery. Better use of small screen estate, fixed buggy features (slideshow, swipes) and reduced system load. 
+
 = 1.4.1 =
 Swipe gestures, slideshow, sets and lots of fixes. Check your config screen after update!
 
@@ -327,3 +352,20 @@ Indeed you can!
 Translations and help with implementing them would be nice. A read through and comments on my WordPress API usage would also be most welcome, as I'm not really able to keep on top of the frequent WordPress releases anymore.
 
 And of course; [a book or two](http://www.amazon.com/gp/registry/wishlist/2QB6SQ5XX2U0N/105-3209188-5640446?reveal=unpurchased&filter=all&sort=priority&layout=standard&x) always brightens my day! (used ones are fine!) 
+
+== Other Notes ==
+Copyright (C) 2010-2013 Ulf Benjaminsson (my first name at ulfben dot com).
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA

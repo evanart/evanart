@@ -19,7 +19,7 @@ GENERAL STYLES
 
 body {
    margin: 5px;
-   box-shadow: 0 0 30px rgba(0,0,0,.29);
+   .box-shadow(0 0 30px rgba(0,0,0,.29));
    border: 1px solid rgba(255,255,255,.6);
 }
 
@@ -71,21 +71,31 @@ HEADER SYTLES
 .header {
 	#heading-container {
 		#logo {
-			font-size: 7em;
-			margin: 40px 0 40px;
-			float:left;
-			width: auto;
+			
+			//font-size: 6em;
+			//margin: 0;
+			//position: absolute;
+			//top: 60px;
+			//float:left;
+			//width: auto;
+			//
+			&:hover {
+					
+				}
 		
 		}
+		
 		.site-desciption {
-			float: right;
-			margin: 47px 0 0;
+			margin: 20px 0;
 			width: 240px;
-			text-align: right;
 			line-height: 1.1em;
+			float: right;
 		}
+		
 	
 	}
+	
+	
 }
 
 /*********************
@@ -98,119 +108,129 @@ HEADER SYTLES
 /*********************
 NAVIGATION STYLES
 *********************/
-
-.nav.top-nav {
-	
-	border: 0;
-	height: 47px;
-	li {
-		float: left;
-		position: relative;
-
-		a {
-			border-bottom: 0;
-			-webkit-transition: background 0.2s, margin-top 0.2s;
-			-moz-transition: background 0.2s, margin-top 0.2s;
-			-ms-transition: background 0.2s, margin-top 0.2s;
-			-o-transition: background 0.2s, margin-top 0.2s;
-			transition: background, margin-top 0.2s;
-
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				
-				box-shadow: 3px 3px 0 rgba(0,0,0,.1) ;
-				padding: 9px 19px 9px 19px;
-				margin-top: -4px;
-				border: 1px solid #b16615;
-				background: @textureGamma;
-				background-position: center bottom;
-				color: #fff;
-				text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-
-			}
-		}
-
-		&:first-child {}
-		&:last-child {}
-
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			width: 200px;
-			position: absolute;
-			display: none;
-			z-index: 8999;
-			border: 1px solid #b16615;
-			background: @textureGamma;
-			background-position: center bottom;
-			box-shadow: 3px 3px 0 rgba(0,0,0,.1) ;
-			margin-left: -4px;
-			margin-top: -2px;
+.header {
+	nav {
+		
+		ul.nav.top-nav {
+		
+			border: 0;
+			height: 47px;
+			float: right;
+			width: auto;
 			
 			li {
-
+				float: left;
+				position: relative;
+		
 				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 200px;
-					
-
-					&:hover,
-					&:focus {
-						background-color: lighten(@evanart-lightred, 18%);
+					//border-bottom: 0;
+					.transition(margin-top 0.2s);
+					border-bottom: none;
+		
+					/*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+					&:hover, &:focus {
+						.TextureBoxBeta;
+						.box-shadow(3px 3px 0 rgba(0,0,0,.1));
+						padding: 9px 19px 9px 19px;
+						margin-top: -4px;
+						background-position: center bottom;
+						color: #fff;
+						text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+		
 					}
-
-					&:link {}
+	
 				}
-
+		
 				&:first-child {}
-
 				&:last-child {
-
 					a {
-						border-bottom: 0;
+						&:hover, &:focus {
+							.TextureBoxDelta;
+							padding: 9px 19px 9px 19px;
+							}
+						
 					}
 				}
-
+		
 				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
+				plan your menus and drop-downs wisely.
 				*/
-				ul {}
-			}
-
-			/* highlight sub-menu current page */
+				ul.sub-menu,
+				ul.children {
+					width: 200px;
+					position: absolute;
+					display: none;
+					z-index: 8999;
+					border: 1px solid #b16615;
+					background: @textureGamma;
+					background-position: center bottom;
+					.box-shadow(3px 3px 0 rgba(0,0,0,.1));
+					margin-left: -4px;
+					margin-top: -2px;
+					
+					li {
+		
+						a {
+							padding-left: 10px;
+							border-right: 0;
+							display: block;
+							width: 200px;
+							
+		
+							&:hover,
+							&:focus {
+								background-color: lighten(@evanart-lightred, 18%);
+							}
+		
+							&:link {}
+						}
+		
+						&:first-child {}
+		
+						&:last-child {
+		
+							a {
+								border-bottom: 0;
+							}
+						}
+		
+						/*
+						if you need to go deeper, go nuts
+						just remember deeper menus suck
+						for usability. k, bai.
+						*/
+						ul {}
+					}
+		
+					/* highlight sub-menu current page */
+					li.current-menu-item,
+					li.current_page_item,
+					li.current-page-ancestor {
+						a {}
+					}
+				}
+		
+				/* showing sub-menus */
+				&:hover ul {
+					top: auto;
+					display: block;
+				}
+		
+			} /* end .menu ul li */
+		
+			/* highlight current page */
 			li.current-menu-item,
 			li.current_page_item,
 			li.current-page-ancestor {
 				a {}
-			}
-		}
-
-		/* showing sub-menus */
-		&:hover ul {
-			top: auto;
-			display: block;
-		}
-
-	} /* end .menu ul li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-		a {}
-	}  /* end current highlighters */
-
-} /* end .nav */
-
+			}  /* end current highlighters */
+		
+		} /* end .nav */
+	} /* end nav */
+} /* end .header */
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -362,4 +382,68 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
+
+
+/*********************
+14. Landing Page Specific
+*********************/
+
+
+h1 {
+	&.intro-text {
+		
+	}
+	
+}
+
+
+a {
+	&.category-callout {
+		h1 {
+			font-size: 2.4em;
+			&:hover {
+			}
+		}
+		h2 {
+			
+		}
+		p {
+			opacity: 0;
+			.transition(opacity 0.2s);
+			
+		}
+		&:hover {
+			p {
+				opacity: 1;
+			}
+		}
+		.callout-box {
+			
+		}
+		
+		
+		&.professional {
+			h1 {
+				
+			}
+			.callout-box {
+				
+			}
+		}
+		
+		&.personal {
+			
+			.callout-box {
+				
+			}
+		}
+		
+	}
+}
+
+
+/*********************
+15. For Dev
+*********************/
+
 

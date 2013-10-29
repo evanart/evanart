@@ -103,6 +103,12 @@ class RIPConfig{
 	// All postback actions here
 	public function admin_init()
 	{
+		// Add our admin scripts
+		// Add only in Rich Editor mode
+		if ( get_user_option('rich_editing') == 'true') {
+			add_filter( 'mce_external_plugins',array(&$this,'mce_external_plugins'),30);
+		}
+		
 		//Add to plugins menu
 		if ( current_user_can('manage_options') )
 			add_filter('plugin_action_links',array(&$this,'plugin_action_links'),10,2);
@@ -115,6 +121,12 @@ class RIPConfig{
 
 		//Save
 		$this->save_settings();
+	}
+
+	public function mce_external_plugins($plugin_array)
+	{
+		$plugin_array['pbeditimage'] = plugins_url('/scripts/editor-button.js', __FILE__);
+		return $plugin_array;
 	}
 	
 	public function admin_print_styles()

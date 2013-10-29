@@ -1,0 +1,66 @@
+
+[Tue Jan 29 04:11:29 2013] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17] Image does not exist: E:\Design\xampp\htdocs/wp-content/uploads/2013/01/followers1.jpg
+
+REFERRER: http://127.0.0.1/evanart/?p=813
+
+REQUEST: 127.0.0.1/evanart/wp-content/plugins/pb-responsive-images/slir/index.php?r=w584/wp-content/uploads/2013/01/followers1.jpg
+
+#0 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(170): SLIRRequest->setPath('wp-content/uplo...')
+#1 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'wp-content/uplo...')
+#2 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(286): SLIRRequest->initialize()
+#3 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(444): SLIR->getRequest()
+#4 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Tue Jan 29 04:13:41 2013] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17] Image does not exist: E:\Design\xampp\htdocs/wp-content/uploads/2013/01/followers.jpg
+
+REFERRER: http://127.0.0.1/evanart/?p=813
+
+REQUEST: 127.0.0.1/evanart/wp-content/plugins/pb-responsive-images/slir/index.php?r=w584/wp-content/uploads/2013/01/followers.jpg
+
+#0 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(170): SLIRRequest->setPath('wp-content/uplo...')
+#1 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'wp-content/uplo...')
+#2 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(286): SLIRRequest->initialize()
+#3 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(444): SLIR->getRequest()
+#4 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Tue Jan 29 04:13:41 2013] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17] Image does not exist: E:\Design\xampp\htdocs/wp-content/uploads/2013/01/followers.jpg
+
+REFERRER: http://127.0.0.1/evanart/?p=813
+
+REQUEST: 127.0.0.1/evanart/wp-content/plugins/pb-responsive-images/slir/index.php?r=w584/wp-content/uploads/2013/01/followers.jpg
+
+#0 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(170): SLIRRequest->setPath('wp-content/uplo...')
+#1 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'wp-content/uplo...')
+#2 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(286): SLIRRequest->initialize()
+#3 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(444): SLIR->getRequest()
+#4 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Tue Jan 29 04:13:45 2013] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17] Image does not exist: E:\Design\xampp\htdocs/wp-content/uploads/2013/01/followers.jpg
+
+REFERRER: http://127.0.0.1/evanart/?p=813
+
+REQUEST: 127.0.0.1/evanart/wp-content/plugins/pb-responsive-images/slir/index.php?r=w584/wp-content/uploads/2013/01/followers.jpg
+
+#0 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(170): SLIRRequest->setPath('wp-content/uplo...')
+#1 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'wp-content/uplo...')
+#2 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(286): SLIRRequest->initialize()
+#3 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(444): SLIR->getRequest()
+#4 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Tue Jan 29 04:14:00 2013] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.56 Safari/537.17] Image does not exist: E:\Design\xampp\htdocs/wp-content/uploads/2013/01/followers.jpg
+
+REFERRER: http://127.0.0.1/evanart/?p=813
+
+REQUEST: 127.0.0.1/evanart/wp-content/plugins/pb-responsive-images/slir/index.php?r=w584/wp-content/uploads/2013/01/followers.jpg
+
+#0 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(170): SLIRRequest->setPath('wp-content/uplo...')
+#1 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'wp-content/uplo...')
+#2 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(286): SLIRRequest->initialize()
+#3 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(444): SLIR->getRequest()
+#4 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 E:\Design\xampp\htdocs\evanart\wp-content\plugins\pb-responsive-images\slir\index.php(30): SLIR->processRequestFromURL()
+#6 {main}

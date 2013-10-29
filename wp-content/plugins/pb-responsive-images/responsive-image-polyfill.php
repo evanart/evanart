@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/extend/plugins/pb-responsive-images/
  * Description: Adds support for the proposed responsive image format in post content, and helper functions for theme authors.
  * Author: Phenomblue
- * Version: 1.3
+ * Version: 1.4.1
  * Author URI: http://www.phenomblue.com/
  *
  * -------------------------------------
@@ -13,7 +13,7 @@
  * @category Plugin
  * @author Jacob Dunn
  * @link http://www.phenomblue.com/ Phenomblue
- * @version 1.3
+ * @version 1.4.1
  *
  * -------------------------------------
  * 
@@ -37,9 +37,10 @@
 
 /* LESS EDITING BELOW */
 
-define('RIP_VERSION', '1.3');
+define('RIP_VERSION', '1.4.1');
 define('RIP_FILE', __FILE__);
 define('RIP_BASENAME', plugin_basename(RIP_FILE));
+define('RIP_PATH', plugin_dir_path(RIP_FILE));
 
 // Activation/Deactivation
 register_activation_hook( RIP_FILE, 'RIP::activate' );
@@ -118,9 +119,6 @@ class RIP{
 	{
 		add_filter('the_content',array(&$this,'the_content'));
 
-		if(RIPOptions::options()->enable_scripts)
-			wp_enqueue_script('picturefill');
-
 		if(RIPOptions::options()->disable_wordpress_resize){
 			add_filter('option_large_size_h',array(&$this,'disable_resize_options'));
 			add_filter('option_large_size_w',array(&$this,'disable_resize_options'));
@@ -129,6 +127,24 @@ class RIP{
 			add_filter('option_thumbnail_size_h',array(&$this,'disable_resize_options'));
 			add_filter('option_thumbnail_size_w',array(&$this,'disable_resize_options'));
 		}
+	}
+
+	public function wp_enqueue_scripts()
+	{
+		wp_register_script( 'matchmedia',
+			plugins_url('scripts/matchmedia.js',RIP_FILE),
+			array(),
+			RIP_VERSION,
+			false);
+
+		wp_register_script( 'picturefill',
+			plugins_url('scripts/picturefill.js',RIP_FILE),
+			array('matchmedia'),
+			RIP_VERSION,
+			false);
+
+		if(RIPOptions::options()->enable_scripts)
+			wp_enqueue_script('picturefill');
 	}
 
 	public function disable_resize_options($value)
@@ -152,11 +168,25 @@ class RIP{
 				: '{plugin-url}/slir/?r=';
 		}
 
+		// If we're pointing to our index.php file, exit
+		if(preg_match('#/slir/(index.php)?\?r=$#', $options->slir_base)) return;
+
+
 		if($wp_rewrite->using_mod_rewrite_permalinks()){
-			$base = str_replace(site_url().'/','',$options->slir_base).'(.*)$';
-			$rules = array(
-				$base => 'wp-content/plugins/pb-responsive-images/slir/index.php?r=$1'
+			// Get our subfolder, if wordpress is in a subdirectory
+			$search = array(
+				'#'.preg_quote(get_bloginfo('url')).'#',
+				'#^/#'
 				);
+			$base = preg_replace($search,'',$options->slir_base).'([^/]*)/(.*)$';
+			$path = preg_replace($search,'',plugins_url('slir/index.php',RIP_FILE));
+			$rules = array($base => sprintf('%1$s?r=$1/$2',$path));
+
+			// printf('<pre>%1$s</pre>',print_r($url,true));
+			// printf('<pre>%1$s</pre>',print_r($options->slir_base,true));
+			// printf('<pre>%1$s</pre>',print_r($rules,true));
+
+			// exit();
 
 			$wp_rewrite->non_wp_rules = $rules + $wp_rewrite->non_wp_rules;
 		}
@@ -204,9 +234,9 @@ class RIP{
 	private function __construct()
 	{
 		$this->options = RIPOptions::options();
-		$this->register_scripts();
 		
 		add_action('init',array(&$this,'init'));
+		add_action('wp_enqueue_scripts',array(&$this,'wp_enqueue_scripts'));
 		add_action('generate_rewrite_rules',array(&$this,'generate_rewrite_rules'));
 	}
 
@@ -283,10 +313,15 @@ class RIP{
 		if(strpos($image->attributes['src'],site_url()) === false) return $image;
 
 		// Make sure this isn't flagged as non-responsive
-		if($image->attributes['class'] && strpos($image->attributes['class'], 'non-responsive') !== false) return $image;
+		if($image->attributes['class'] && preg_match('/(\s|^)non-responsive(\s|$)/',$image->attributes['class']) === 1) return $image;
 		
 		// Compile the Picture tag set
 		$sources = array();
+
+		// Get our subfolder, if wordpress is in a subdirectory
+		$url = parse_url(site_url());
+		// Get rid of the apache user dir, if present
+		$path = (isset($url['path'])) ? preg_replace('#^/~[^/]+#', '', $url['path']) : '';
 
 		foreach ($options->formats as $key => $format) {
 
@@ -305,9 +340,10 @@ class RIP{
 			}
 
 			// Our base path
-			$source = sprintf('%1$s%2$s%3$s',
+			$source = sprintf('%1$s%2$s%3$s%4$s',
 				$options->slir_base,
 				$format->query,
+				$path,
 				str_replace(site_url(), '', $image->attributes['src'])
 				);
 

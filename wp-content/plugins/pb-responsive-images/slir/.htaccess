@@ -16,5 +16,3 @@ RewriteRule . index.php [L]
 Order Deny,Allow
 Deny from All
 </Files>
-
-RewriteRule ^slir(.*)$ /wp-content/plugins/pb-responsive-images/slir/index.php?r=$1 [L]
