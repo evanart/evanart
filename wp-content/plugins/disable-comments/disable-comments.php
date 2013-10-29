@@ -3,7 +3,7 @@
 Plugin Name: Disable Comments
 Plugin URI: http://wordpress.org/extend/plugins/disable-comments/
 Description: Allows administrators to globally disable comments on their site. Comments can be disabled according to post type.
-Version: 0.9
+Version: 1.0.1
 Author: Samir Shah
 Author URI: http://rayofsolaris.net/
 License: GPL2
@@ -65,6 +65,10 @@ class Disable_Comments {
 			add_action( 'widgets_init', array( $this, 'disable_rc_widget' ) );
 			add_filter( 'wp_headers', array( $this, 'filter_wp_headers' ) );
 			add_action( 'template_redirect', array( $this, 'filter_query' ), 9 );	// before redirect_canonical
+			
+			// Admin bar filtering has to happen here since WP 3.6
+			add_action( 'template_redirect', array( $this, 'filter_admin_bar' ) );
+			add_action( 'admin_init', array( $this, 'filter_admin_bar' ) );
 		}
                 
 		// these can happen later
@@ -94,21 +98,16 @@ class Disable_Comments {
 		elseif( is_admin() ) {
 			add_action( 'all_admin_notices', array( $this, 'setup_notice' ) );
 		}
-		
-		if( $this->options['remove_everywhere'] && is_admin_bar_showing() ) {
-			remove_action( 'admin_bar_menu', 'wp_admin_bar_comments_menu', 50 );	// WP<3.3
-			remove_action( 'admin_bar_menu', 'wp_admin_bar_comments_menu', 60 );	// WP 3.3
-			if( $this->networkactive )
-				add_action( 'admin_bar_menu', array( $this, 'remove_network_comment_links' ), 500 );
-		}
-		
+
+		// Filters for the admin only
 		if( is_admin() ) {
 			if( $this->networkactive ) {
 				add_action( 'network_admin_menu', array( $this, 'settings_menu' ) );
 			}
 			else {
 				add_action( 'admin_menu', array( $this, 'settings_menu' ) );
-				register_deactivation_hook( __FILE__, array( $this, 'single_site_deactivate' ) );
+				if( is_multisite() )	// We're on a multisite setup, but the plugin isn't network activated.
+					register_deactivation_hook( __FILE__, array( $this, 'single_site_deactivate' ) );
 			}
 
 			add_action( 'admin_print_footer_scripts', array( $this, 'discussion_notice' ) );
@@ -127,6 +126,17 @@ class Disable_Comments {
 				add_filter( 'pre_option_default_pingback_flag', '__return_zero' );
 			}
 		}
+		// Filters for front end only
+		else {
+			if( $this->options['remove_everywhere'] ) {
+				// Kill the comments template. This will deal with themes that don't check comment stati properly!
+				add_filter( 'comments_template', array( $this, 'dummy_comments_template' ), 20 );
+			}
+		}
+	}
+
+	function dummy_comments_template() {
+		return dirname( __FILE__ ) . '/comments-template.php';
 	}
 	
 	function filter_wp_headers( $headers ) {
@@ -142,12 +152,29 @@ class Disable_Comments {
 			}
 
 			set_query_var( 'feed', '' );	// redirect_canonical will do the rest
+			redirect_canonical();
+		}
+	}
+	
+	function filter_admin_bar() {
+		if( is_admin_bar_showing() ) {
+			// Remove comments links from admin bar
+			remove_action( 'admin_bar_menu', 'wp_admin_bar_comments_menu', 50 );	// WP<3.3
+			remove_action( 'admin_bar_menu', 'wp_admin_bar_comments_menu', 60 );	// WP 3.3
+			if( is_multisite() )
+				add_action( 'admin_bar_menu', array( $this, 'remove_network_comment_links' ), 500 );
 		}
 	}
 	
 	function remove_network_comment_links( $wp_admin_bar ) {
-		foreach( (array) $wp_admin_bar->user->blogs as $blog )
-			$wp_admin_bar->remove_menu( 'blog-' . $blog->userblog_id . '-c' );
+		if( $this->networkactive ) {
+			foreach( (array) $wp_admin_bar->user->blogs as $blog )
+				$wp_admin_bar->remove_menu( 'blog-' . $blog->userblog_id . '-c' );
+		}
+		else {
+			// We have no way to know whether the plugin is active on other sites, so only remove this one
+			$wp_admin_bar->remove_menu( 'blog-' . get_current_blog_id() . '-c' );
+		}
 	}
 	
 	function edit_form_inputs() {
@@ -183,7 +210,12 @@ jQuery(document).ready(function($){
 			echo '<div class="updated fade"><p>' . sprintf( __( 'The <em>Disable Comments</em> plugin is active, but isn\'t configured to do anything yet. Visit the <a href="%s">configuration page</a> to choose which post types to disable comments on.', 'disable-comments'), $url ) . '</p></div>';
 	}
 	
-	function filter_admin_menu(){
+	function filter_admin_menu(){		
+		global $pagenow;
+
+		if ( $pagenow == 'comment.php' || $pagenow == 'edit-comments.php' || $pagenow == 'options-discussion.php' )
+			wp_die( __( 'Comments are closed.' ), '', array( 'response' => 403 ) );
+
 		remove_menu_page( 'edit-comments.php' );
 		remove_submenu_page( 'options-general.php', 'options-discussion.php' );
 	}
@@ -286,14 +318,22 @@ jQuery(document).ready(function($){
 		<p class="indent"><?php _e( 'Disabling comments will also disable trackbacks and pingbacks. All comment-related fields will also be hidden from the edit/quick-edit screens of the affected posts. These settings cannot be overridden for individual posts.', 'disable-comments') ?></p>
 	</li>
 	</ul>
-	<?php if( $persistent_allowed ) : ?>
 	<h3><?php _e( 'Other options', 'disable-comments') ?></h3>
 	<ul>
-		<li><label for="permanent"><input type="checkbox" name="permanent" id="permanent" <?php checked( $this->options['permanent'] );?>> <strong><?php _e( 'Use persistent mode', 'disable-comments') ?></strong></label><p class="indent"><?php printf( __( '%s: <strong>This will make persistent changes to your database &mdash; comments will remain closed even if you later disable the plugin!</strong> You should not use it if you only want to disable comments temporarily. Please <a href="%s" target="_blank">read and understand the FAQ</a> before selecting this option.', 'disable-comments'), '<strong style="color: #900">' . __('Warning', 'disable-comments') . '</strong>', 'http://wordpress.org/extend/plugins/disable-comments/faq/' ); ?></p>
-		<?php if( $this->networkactive ) echo '<p class="indent">' . sprintf( __( '%s: Entering persistent mode on large multi-site networks requires a large number of database queries and can take a while. Use with caution!', 'disable-comments'), '<strong>' . __('Warning', 'disable-comments') . '</strong>' ) . '</p>';?>
+		<li>
+		<?php
+		if( $persistent_allowed ) {
+			echo '<label for="permanent"><input type="checkbox" name="permanent" id="permanent" '. checked( $this->options['permanent'], true, false ) . '> <strong>' . __( 'Use persistent mode', 'disable-comments') . '</strong></label>';
+			echo '<p class="indent">' . sprintf( __( '%s: <strong>This will make persistent changes to your database &mdash; comments will remain closed even if you later disable the plugin!</strong> You should not use it if you only want to disable comments temporarily. Please <a href="%s" target="_blank">read the FAQ</a> before selecting this option.', 'disable-comments'), '<strong style="color: #900">' . __('Warning', 'disable-comments') . '</strong>', 'http://wordpress.org/extend/plugins/disable-comments/faq/' ) . '</p>';
+			if( $this->networkactive )
+				echo '<p class="indent">' . sprintf( __( '%s: Entering persistent mode on large multi-site networks requires a large number of database queries and can take a while. Use with caution!', 'disable-comments'), '<strong>' . __('Warning', 'disable-comments') . '</strong>' ) . '</p>';
+		}
+		else {
+			printf( __( 'Persistent mode has been manually disabled. See the <a href="%s" target="_blank">FAQ</a> for more information.', 'disable-comments' ), 'http://wordpress.org/extend/plugins/disable-comments/faq/' );
+		}
+		?>
 		</li>
 	</ul>
-	<?php endif; ?>
 	<p class="submit"><input class="button-primary" type="submit" name="submit" value="<?php _e( 'Save Changes') ?>"></p>
 	</form>
 	</div>
@@ -351,7 +391,7 @@ jQuery(document).ready(function($){
 	}
 	
 	private function persistent_mode_allowed() {
-		return ( !is_multisite() || ( !$this->networkactive && apply_filters( 'disable_comments_allow_persistent_mode', true ) ) );
+		return apply_filters( 'disable_comments_allow_persistent_mode', true );
 	}
 
 	function single_site_deactivate() {

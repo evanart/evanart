@@ -1,0 +1,15 @@
+.liveEdit_active, .liveEdit_editable:hover {
+	outline: none;
+	box-shadow: 0px 0px 5px 4px rgba(126,177,223,1);
+	-webkit-box-shadow: 0px 0px 5px 4px rgba(126,177,223,1);
+	-moz-box-shadow: 0px 0px 5px 4px rgba(126,177,223,1);
+	-o-box-shadow: 0px 0px 5px 4px rgba(126,177,223,1);
+}
+
+.liveEdit_saved {
+	outline: none;
+	box-shadow: 0px 0px 5px 4px rgba(82,246,101,1);
+	-webkit-box-shadow: 0px 0px 5px 4px rgba(82,246,101,1);
+	-moz-box-shadow: 0px 0px 5px 4px rgba(82,246,101,1);
+	-o-box-shadow: 0px 0px 5px 4px rgba(82,246,101,1);
+}

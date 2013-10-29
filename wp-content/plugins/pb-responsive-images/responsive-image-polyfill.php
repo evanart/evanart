@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/extend/plugins/pb-responsive-images/
  * Description: Adds support for the proposed responsive image format in post content, and helper functions for theme authors.
  * Author: Phenomblue
- * Version: 1.4
+ * Version: 1.4.1
  * Author URI: http://www.phenomblue.com/
  *
  * -------------------------------------
@@ -13,7 +13,7 @@
  * @category Plugin
  * @author Jacob Dunn
  * @link http://www.phenomblue.com/ Phenomblue
- * @version 1.4
+ * @version 1.4.1
  *
  * -------------------------------------
  * 
@@ -37,9 +37,10 @@
 
 /* LESS EDITING BELOW */
 
-define('RIP_VERSION', '1.4');
+define('RIP_VERSION', '1.4.1');
 define('RIP_FILE', __FILE__);
 define('RIP_BASENAME', plugin_basename(RIP_FILE));
+define('RIP_PATH', plugin_dir_path(RIP_FILE));
 
 // Activation/Deactivation
 register_activation_hook( RIP_FILE, 'RIP::activate' );
@@ -170,13 +171,22 @@ class RIP{
 		// If we're pointing to our index.php file, exit
 		if(preg_match('#/slir/(index.php)?\?r=$#', $options->slir_base)) return;
 
+
 		if($wp_rewrite->using_mod_rewrite_permalinks()){
 			// Get our subfolder, if wordpress is in a subdirectory
-			$url = parse_url(site_url());
-			$base = str_replace(site_url().'/','',$options->slir_base).'([^/]*)/(.*)$';
-			$rules = array(
-				$base => sprintf('%1$swp-content/plugins/pb-responsive-images/slir/index.php?r=$1/$2',$url['path'])
+			$search = array(
+				'#'.preg_quote(get_bloginfo('url')).'#',
+				'#^/#'
 				);
+			$base = preg_replace($search,'',$options->slir_base).'([^/]*)/(.*)$';
+			$path = preg_replace($search,'',plugins_url('slir/index.php',RIP_FILE));
+			$rules = array($base => sprintf('%1$s?r=$1/$2',$path));
+
+			// printf('<pre>%1$s</pre>',print_r($url,true));
+			// printf('<pre>%1$s</pre>',print_r($options->slir_base,true));
+			// printf('<pre>%1$s</pre>',print_r($rules,true));
+
+			// exit();
 
 			$wp_rewrite->non_wp_rules = $rules + $wp_rewrite->non_wp_rules;
 		}
