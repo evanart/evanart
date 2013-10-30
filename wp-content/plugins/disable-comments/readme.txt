@@ -1,8 +1,9 @@
 === Disable Comments ===
 Contributors: solarissmoke
+Donate link: http://rayofsolaris.net/donate.php
 Tags: comments, disable, global
-Requires at least: 3.2
-Tested up to: 3.5
+Requires at least: 3.3
+Tested up to: 3.6
 Stable tag: trunk
 
 Allows administrators to globally disable comments on their site. Comments can be disabled according to post type. Multisite friendly.
@@ -31,7 +32,7 @@ Unfortunately some themes do not properly check the comment status of posts, and
 
 **I repeat, using persistent mode will make changes to your database. DO NOT USE IT IF YOU WANT TO DISABLE COMMENTS TEMPORARILY.**
 
-**Network Administrators**: If you want to prevent individual site administrators from using persistent mode, hook into the `disable_comments_allow_persistent_mode` filter and return `false`. This will prevent the option from being visible to site administrators.
+**Administrators**: If you want to prevent persistent mode from being used by mistake, hook into the `disable_comments_allow_persistent_mode` filter and return `false`. This will prevent the option from being available on the settings page.
 
 = Nothing happens after I disable comments on all posts - comment forms still appear when I view my posts. =
 
@@ -53,6 +54,10 @@ Go to the edit page for the post you want to disable comments on. Scroll down to
 
 You can also bulk-edit the comment status of multiple posts from the [posts screen](http://codex.wordpress.org/Posts_Screen).
 
+= Why is persistent mode disabled? =
+
+Someone (probably your site administrator) has chosen to disable this option. See "What is persistent mode?" above.
+
 == Details ==
 
 The plugin provides the option to **completely disable the commenting feature in WordPress**. When this option is selected, the following changes are made:
@@ -68,6 +73,21 @@ The plugin provides the option to **completely disable the commenting feature in
 **Please delete any existing comments on your site before applying this setting, otherwise (depending on your theme) those comments may still be displayed to visitors.**
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix issue with settings persistence in single-site installations.
+
+= 1.0 =
+* Prevent theme comments template from being displayed when comments are disabled everywhere.
+* Prevent direct access to comment admin pages when comments are disabled everywhere.
+
+= 0.9.2 =
+* Make persistent mode option filter available all the time.
+* Fix redirection for feed requests
+* Fix admin bar filtering in WP 3.6
+
+= 0.9.1 =
+* Short life in the wild.
 
 = 0.9 =
 * Added gettext support and German translation.
