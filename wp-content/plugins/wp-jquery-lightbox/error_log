@@ -1,0 +1,2 @@
+[28-Jun-2013 09:15:01 America/New_York] PHP Fatal error:  Call to undefined function add_action() in /home/frerup/public_html/wp-content/plugins/wp-jquery-lightbox/wp-jquery-lightbox.php on line 11
+[30-Jun-2013 06:51:25 America/New_York] PHP Fatal error:  Call to undefined function add_action() in /home/frerup/public_html/wp-content/plugins/wp-jquery-lightbox/wp-jquery-lightbox.php on line 11
