@@ -1,3 +1,0 @@
-The documentation for v1.2 is the same for the previous version except for a new option added which is 'OpenFirstOnload' and it can be true or false, ans 'width' option is now  fraction of the slider's width not a width in pixels (i.e 0.4,0.6,....)
-
-NOTE: the 'OpenFirstOnload' option is not working properly for 'rotate' animation, so it is not advised to use it with it.

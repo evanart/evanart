@@ -109,103 +109,24 @@ jQuery(document).ready(function($) {
 
 
 
-/*! Custom Stuff for zAccordion
-*/
 
 
 jQuery(document).ready(function() {
-	var example = jQuery('#slider'), defaults = {
-		buildComplete: function () {
-			example.css('visibility', 'visible');
-		},
-		timeout: 3000,
-		speed: 300,
-		auto: true,
-		pause: true,
-		slideWidth: 500,
-		width: 1098,
-		height: 250,
-		easing: "easeInOutQuint",
-		trigger: "mouseover"
-	};
-	function build(x) {
-		var opts, current;
-		if (!jQuery.isEmptyObject(example.data())) { /* If an zAccordion is found, rebuild it with new settings. */
-			example.css('visibility', 'hidden');
-			current = example.data('current');
-			opts = jQuery.extend({
-				startingSlide: current
-			}, defaults, x);
-			example.zAccordion('destroy', {
-				removeStyleAttr: true,
-				removeClasses: true,
-				destroyComplete: {
-					afterDestroy: function() {
-						try {
-							console.log('zAccordion destroyed! Attempting to rebuild...');
-						} catch (e) {}
-					},
-					rebuild: opts
-				}
-			});
-		} else { /* If no zAccordion is found, build one from scratch. */
-			example.css('visibility', 'hidden');
-			opts = jQuery.extend(defaults, x);
-			example.zAccordion(opts);
-		}
-	}
-	/* A unique Media Query is registered for each screen size. */
-	enquire.register('screen and (min-width: 1030px)', { /* Standard screen sizes and a default build for browsers that are unsupported. */
-		match : function () {
-			build({
-				slideWidth: 500,
-				width: 1098,
-				height: 250
-			});
-		} /* The *true* value below means this media query will fire by default. */
-	}, true).register('screen and (min-width: 768px) and (max-width: 1029px)', {
-		match : function () {
-			build({
-				slideWidth: 500,
-				width: 935,
-				height: 250
-			});
-		}
-	}).register('screen and (min-width: 481px) and (max-width: 767px)', {
-		match : function () {
-			build({
-				slideWidth: 500,
-				width: 695,
-				height: 250
-			});
-		}
-	}).register('screen and (max-width: 480px)', {
-		match : function () {
-			if (!jQuery.isEmptyObject(example.data())) {
-				example.zAccordion('destroy', {
-					removeStyleAttr: true,
-					removeClasses: true,
-					destroyComplete: {
-						afterDestroy: function() {
-							try {
-								console.log('zAccordion destroyed!');
-							} catch (e) {}
-						}
-					}
-				});
-			}
-		}
-	});
-});
+ 
+  var owl = jQuery("#slider");
+ 
+  owl.owlCarousel({
+      navigation: true,
+      lazyLoad : true,
+      autoPlay: 2000,
+      items : 3, //10 items above 1000px browser width
+      itemsDesktop: [1200,3], // betweem 900px and 601px
+      itemsTablet: [900,2], //2 items between 600 and 0
+      itemsMobile : [580,1] // itemsMobile disabled - inherit from itemsTablet option
 
-jQuery(document).ready(function() {
-    jQuery("#slider li").click(function () {
-      jQuery(this).addClass("touched");
-       setTimeout(function() {
-      jQuery('#slider li').removeClass("touched");
-     },1000);
-    });
-   
+  });
+ 
+ 
 });
 
 

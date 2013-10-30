@@ -53,10 +53,15 @@
 	      </script>
 		
 
-
+	<script src="<?php echo get_template_directory_uri(); ?>/library/js/owl.carousel.min.js"></script>
+	
+	
+<!-- 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.zaccordion.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/enquire.min.js"></script>
+ -->
+
 	<!--<script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>-->
 	
 
