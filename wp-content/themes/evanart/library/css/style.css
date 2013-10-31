@@ -507,17 +507,6 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
 /*********************
 TOOLS
 *********************/
@@ -792,11 +781,6 @@ body {
   line-height: 1.5;
   color: #565656;
   background: url(../images/bgTexture.gif);
-  margin: 10px 0;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 #container {
   background: url(../images/stripesBg.jpg) no-repeat 50% top transparent;
@@ -1014,9 +998,6 @@ h5,
 /*********************
 07. NAVIGATION STYLES
 *********************/
-body {
-  border: 10px solid black;
-}
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -1813,6 +1794,14 @@ img[class*="wp-image-"],
 /*********************
 14. Landing Page Specific
 *********************/
+.home.page ul.nav.top-nav {
+  display: none;
+}
+.home.page .header nav {
+  height: 45px;
+  margin: -80px 0 0;
+  clear: none;
+}
 .landing-page {
   -webkit-box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.07), -1px -1px 0 rgba(255, 255, 255, 0.4);
   -moz-box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.07), -1px -1px 0 rgba(255, 255, 255, 0.4);
@@ -1897,6 +1886,14 @@ a.category-callout.personal .callout-box h2 {
   width: 100%;
   float: left;
   display: block;
+  margin-bottom: 60px;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.slider-wrap ul#slider {
+  margin: 0;
 }
 .slider-wrap ul#slider li {
   width: 100%;
@@ -2276,10 +2273,13 @@ a.category-callout.personal .callout-box h2 {
 *	v1.24
 */
 .owl-theme .owl-controls {
-  margin-top: 10px;
   text-align: center;
+  height: 0;
 }
-/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-pagination {
+  height: 0;
+  padding: 0 40px;
+}
 .owl-theme .owl-controls .owl-buttons div {
   color: #FFF;
   display: inline-block;
@@ -2287,28 +2287,33 @@ a.category-callout.personal .callout-box h2 {
   *display: inline;
   /*IE7 life-saver */
 
-  margin: 5px;
-  padding: 3px 10px;
-  font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background: #869791;
-  filter: alpha(opacity=50);
-  /*IE7 fix*/
-
-  opacity: 0.5;
+  font-size: 36px;
+  line-height: 1;
+  padding: 0px 6px 6px;
+  margin-top: -10px;
+  color: #ab3030;
+  text-transform: uppercase;
 }
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
+.owl-theme .owl-controls .owl-buttons .owl-prev,
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #fff;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  left: auto;
+  right: 0;
+  padding-left: 9px;
+}
 .owl-theme .owl-controls.clickable .owl-buttons div:hover {
-  filter: alpha(opacity=100);
-  /*IE7 fix*/
-
-  opacity: 1;
-  text-decoration: none;
+  background-color: #cc8686;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
-/* Styling Pagination*/
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background-color: #cc8686;
+}
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
@@ -2318,26 +2323,11 @@ a.category-callout.personal .callout-box h2 {
 }
 .owl-theme .owl-controls .owl-page span {
   display: block;
-  width: 12px;
-  height: 12px;
-  margin: 5px 7px;
-  filter: alpha(opacity=50);
-  /*IE7 fix*/
-
-  opacity: 0.5;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: #869791;
+  width: 20px;
+  margin: 0 2px;
+  height: 20px;
+  background-color: #cc8686;
 }
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span {
-  filter: alpha(opacity=100);
-  /*IE7 fix*/
-
-  opacity: 1;
-}
-/* If PaginationNumbers is true */
 .owl-theme .owl-controls .owl-page span.owl-numbers {
   height: auto;
   width: auto;
@@ -2348,20 +2338,24 @@ a.category-callout.personal .callout-box h2 {
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
-/* preloading images */
+.owl-theme .owl-controls .owl-page.active span {
+  background-color: #ab3030;
+}
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
 }
-.owl-theme .owl-controls .owl-buttons .owl-prev,
-.owl-theme .owl-controls .owl-buttons .owl-next {
-  position: absolute;
-  left: 0;
-  margin-top: -30px;
+/* ClearFix*/
+.clearfix {
+  clear: both;
 }
-.owl-theme .owl-controls .owl-buttons .owl-next {
-  left: auto;
-  right: 0;
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }
 /*********************
 15. For Dev
@@ -2462,7 +2456,7 @@ tweeners.
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
     clear: both;
     padding: 20px 0 100px;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .footer nav {
     float: left;
@@ -2614,13 +2608,6 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
-  body {
-    margin: 5px;
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.29);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-  }
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -2901,13 +2888,6 @@ you can add resource intensive styles.
   be seen on the Desktop. 
   
   ******************************************************************/
-  body {
-    margin: 10px;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.29);
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.29);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.29);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-  }
   .header #heading-container #logo {
     width: auto;
     position: absolute;
@@ -2915,6 +2895,13 @@ you can add resource intensive styles.
   }
   .header #heading-container .site-desciption {
     width: auto;
+  }
+  .home.page .header #heading-container #logo {
+    width: 100%;
+    position: relative;
+  }
+  .home.page .header nav {
+    margin: -80px 0 0;
   }
   .header {
     /* end nav */

@@ -3,41 +3,19 @@
 	{
 		"selected_items":
 		[
+			[
+				"text-",
+				"text-transform"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
-			"settings":
-			{
-				"buffer_size": 593,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 79 files for \".slider-wrap\"\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\css\\ie.css:\n    1: .clearfix{zoom:1}.clearfix:before,.clearfix:after{content:\"\";display:table}.clearfix:after{clear:both}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.image-replacement{text-indent:100%;white-space:nowrap;overflow:hidden}span.amp{font-family:'Rokkitt',serif;font-style:italic}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.alert{margin:10px;padding:5px 18px;border:1px solid}.alert-help{margin:10px;padding:5px 18px;border:1px solid;border-color:#e8dc59;background:#ebe16f}.alert-info{margin:10px;padding:5px 18px;border:1px solid;border-color:#bfe4f4;background:#d5edf8}.alert-error{margin:10px;padding:5px 18px;border:1px solid;border-color:#f8cdce;background:#fbe3e4}.alert-success{margin:10px;padding:5px 18px;border:1px solid;border-color:#deeaae;background:#e6efc2}.AlphaBox{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.4);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.4);box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.4);padding:15px 20px;border:1px solid #cacaca;margin:0 0 1.5em 0;background-color:rgba(255,255,255,0.7)}.BetaBox{padding:10px;border:1px solid #b9b9b9;margin:0 0 1.5em 0;background-color:rgba(235,235,235,0.7);-webkit-box-shadow:inset 3px 4px 1px rgba(0,0,0,0.07),1px 1px 0 rgba(255,255,255,0.49);-moz-box-shadow:inset 3px 4px 1px rgba(0,0,0,0.07),1px 1px 0 rgba(255,255,255,0.49);box-shadow:inset 3px 4px 1px rgba(0,0,0,0.07),1px 1px 0 rgba(255,255,255,0.49);padding:10px 10px 10px 15px}.RedBox{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9);box-shadow:3px 4px 1px rgba(0,0,0,0.07),-1px -1px 0 rgba(255,255,255,0.9);border:1px solid #ac6565;background-color:#cc8686;padding:10px}.TextureBoxAlpha{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #7a1313;background:url(../images/texture_alpha.gif) repeat left top #ab3030;padding:10px}.TextureBoxBeta{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #44a5ca;background:url(../images/texture_beta.gif) repeat left top #8ecfd0;padding:10px}.TextureBoxBeta h1,.TextureBoxBeta h3.h2{color:#fff;text-shadow:3px 3px 0 rgba(0,0,0,0.3)}.TextureBoxBeta h1:hover,.TextureBoxBeta h3.h2:hover{color:#fff}.TextureBoxBeta h2{color:#2279aa;text-shadow:1px 1px 0 rgba(255,255,255,0.3)}.TextureBoxGamma{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #b16615;background:url(../images/texture_gamma.gif) repeat left top #e68e30;padding:10px}.TextureBoxDelta{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #398b5b;background:url(../images/texture_delta.gif) repeat left top #75ac8c;padding:10px}.TextureBoxDelta h1,.TextureBoxDelta h3.h2{color:#fff;text-shadow:3px 3px 0 rgba(0,0,0,0.3)}.TextureBoxDelta h1:hover,.TextureBoxDelta h3.h2:hover{color:#fff}.TextureBoxDelta h2{color:#22693e;text-shadow:1px 1px 0 rgba(255,255,255,0.3)}.Button{color:#fff;text-shadow:1px 1px 0 rgba(0,0,0,0.5);margin-bottom:20px}.Button:hover{color:#fff;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.1);-moz-box-shadow:1px 2px 5px rgba(0,0,0,0.1);box-shadow:1px 2px 5px rgba(0,0,0,0.1);text-decoration:none}.entry-content .alignleft,.entry-content img.alignleft{margin-right:1.5em;display:inline;float:left}.entry-content .alignright,.entry-content img.alignright{margin-left:1.5em;display:inline;float:right}.entry-content .aligncenter,.entry-content img.aligncenter{margin-right:auto;margin-left:auto;display:block;clear:both}.footer{border-top:1px solid #ccc;background-color:rgba(194,194,194,0.26);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.6);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.6);box-shadow:inset 0 1px 0 rgba(255,255,255,0.6);clear:both;padding:20px 0 100px;margin-top:100px}.footer nav{float:left;width:80%}.footer nav ul.nav{float:left;width:100%}.footer nav ul.nav li{float:left;margin:0 20px 0 0}.footer .copyright{float:right;width:20%;text-align:right}h1.intro-text{text-align:center;font-size:2.5em;margin:.2em 0 .5em}a.category-callout h1{font-size:2.7em}a.category-callout p{font-size:1em}.slider-wrap{width:100%;float:left;overflow:hidden;height:250px;-webkit-box-shadow:0 1px 5px rgba(0,0,0,0.35);-moz-box-shadow:0 1px 5px rgba(0,0,0,0.35);box-shadow:0 1px 5px rgba(0,0,0,0.35);margin-bottom:1.6em;display:block}.slider-wrap ul#slider li{overflow:visible!important;width:100%}.slider-wrap ul#slider li img{-webkit-box-shadow:0 0 5px rgba(0,0,0,0.8);-moz-box-shadow:0 0 5px rgba(0,0,0,0.8);box-shadow:0 0 5px rgba(0,0,0,0.8);display:block;max-width:100%}.slider-wrap ul#slider li span{opacity:0;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;-ms-transition:opacity .2s;transition:opacity .2s;position:absolute;display:block;bottom:15px;left:20px;background-color:rgba(255,255,255,0.85);font-style:italic;padding:3px 7px;-webkit-box-shadow:2px 2px 0 rgba(0,0,0,0.3);-moz-box-shadow:2px 2px 0 rgba(0,0,0,0.3);box-shadow:2px 2px 0 rgba(0,0,0,0.3);font-size:.9em}.slider-wrap ul#slider li:hover span,.slider-wrap ul#slider li.touched span{opacity:1}.onecol{width:5.801104972%}.twocol{width:14.364640883%}.threecol{width:22.928176794%}.fourcol{width:31.491712705%}.fivecol{width:40.055248616%}.sixcol{width:48.618784527%}.sevencol{width:57.182320438000005%}.eightcol{width:65.74585634900001%}.ninecol{width:74.30939226%}.tencol{width:82.87292817100001%}.elevencol{width:91.436464082%}.twelvecol{width:99.999999993%}.onecol,.twocol,.threecol,.fourcol,.fivecol,.sixcol,.sevencol,.eightcol,.ninecol,.tencol,.elevencol,.twelvecol{position:relative;float:left;margin-left:2.762430939%}.first{margin-left:0}.last{float:right}body{margin:5px;-webkit-box-shadow:0 0 30px rgba(0,0,0,0.29);-moz-box-shadow:0 0 30px rgba(0,0,0,0.29);box-shadow:0 0 30px rgba(0,0,0,0.29);border:1px solid rgba(255,255,255,0.6)}.wrap{max-width:1140px}.post.format-image header,.post.format-image footer{float:left;width:25%}.post.format-image header.article-header{border:0}.post.format-image footer{font-size:.7em}.post.format-image .entry-content{float:left;max-width:71%;border-left:1px dotted #cacaca;padding-left:2%;margin-left:2%}.header nav ul.nav.top-nav{border:0;height:47px;float:right;width:auto}.header nav ul.nav.top-nav li{float:left;position:relative}.header nav ul.nav.top-nav li a{-webkit-transition:margin-top .2s;-moz-transition:margin-top .2s;-o-transition:margin-top .2s;-ms-transition:margin-top .2s;transition:margin-top .2s;border-bottom:0}.header nav ul.nav.top-nav li a:hover,.header nav ul.nav.top-nav li a:focus{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #44a5ca;background:url(../images/texture_beta.gif) repeat left top #8ecfd0;padding:10px;-webkit-box-shadow:3px 3px 0 rgba(0,0,0,0.1);-moz-box-shadow:3px 3px 0 rgba(0,0,0,0.1);box-shadow:3px 3px 0 rgba(0,0,0,0.1);padding:9px 19px 9px 19px;margin-top:-4px;background-position:center bottom;color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,0.3)}.header nav ul.nav.top-nav li a:hover h1,.header nav ul.nav.top-nav li a:focus h1,.header nav ul.nav.top-nav li a:hover h3.h2,.header nav ul.nav.top-nav li a:focus h3.h2{color:#fff;text-shadow:3px 3px 0 rgba(0,0,0,0.3)}.header nav ul.nav.top-nav li a:hover h1:hover,.header nav ul.nav.top-nav li a:focus h1:hover,.header nav ul.nav.top-nav li a:hover h3.h2:hover,.header nav ul.nav.top-nav li a:focus h3.h2:hover{color:#fff}.header nav ul.nav.top-nav li a:hover h2,.header nav ul.nav.top-nav li a:focus h2{color:#2279aa;text-shadow:1px 1px 0 rgba(255,255,255,0.3)}.header nav ul.nav.top-nav li:last-child a:hover,.header nav ul.nav.top-nav li:last-child a:focus{-webkit-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);-moz-box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);box-shadow:3px 4px 1px rgba(0,0,0,0.1),0 -1px 0 rgba(255,255,255,0.3);border:1px solid #398b5b;background:url(../images/texture_delta.gif) repeat left top #75ac8c;padding:10px;padding:9px 19px 9px 19px}.header nav ul.nav.top-nav li:last-child a:hover h1,.header nav ul.nav.top-nav li:last-child a:focus h1,.header nav ul.nav.top-nav li:last-child a:hover h3.h2,.header nav ul.nav.top-nav li:last-child a:focus h3.h2{color:#fff;text-shadow:3px 3px 0 rgba(0,0,0,0.3)}.header nav ul.nav.top-nav li:last-child a:hover h1:hover,.header nav ul.nav.top-nav li:last-child a:focus h1:hover,.header nav ul.nav.top-nav li:last-child a:hover h3.h2:hover,.header nav ul.nav.top-nav li:last-child a:focus h3.h2:hover{color:#fff}.header nav ul.nav.top-nav li:last-child a:hover h2,.header nav ul.nav.top-nav li:last-child a:focus h2{color:#22693e;text-shadow:1px 1px 0 rgba(255,255,255,0.3)}.header nav ul.nav.top-nav li ul.sub-menu,.header nav ul.nav.top-nav li ul.children{width:200px;position:absolute;display:none;z-index:8999;border:1px solid #b16615;background:url(../images/texture_gamma.gif) repeat left top #e68e30;background-position:center bottom;-webkit-box-shadow:3px 3px 0 rgba(0,0,0,0.1);-moz-box-shadow:3px 3px 0 rgba(0,0,0,0.1);box-shadow:3px 3px 0 rgba(0,0,0,0.1);margin-left:-4px;margin-top:-2px}.header nav ul.nav.top-nav li ul.sub-menu li a,.header nav ul.nav.top-nav li ul.children li a{padding-left:10px;border-right:0;display:block;width:200px}.header nav ul.nav.top-nav li ul.sub-menu li a:hover,.header nav ul.nav.top-nav li ul.children li a:hover,.header nav ul.nav.top-nav li ul.sub-menu li a:focus,.header nav ul.nav.top-nav li ul.children li a:focus{background-color:#e7c7c7}.header nav ul.nav.top-nav li ul.sub-menu li:last-child a,.header nav ul.nav.top-nav li ul.children li:last-child a{border-bottom:0}.header nav ul.nav.top-nav li:hover ul{top:auto;display:block}.sidebar{margin-top:0}.widgettitle{border-bottom:1px solid #ccc;margin-bottom:.75em}.widget{float:left;width:49%;margin-left:2%}.widget:first-child{margin-left:0}.widget ul li{margin-bottom:.75em}.widget ul li ul{margin-top:.75em;padding-left:1em}a.category-callout h1{font-size:2.4em}a.category-callout p{opacity:0;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;-ms-transition:opacity .2s;transition:opacity .2s}a.category-callout:hover p{opacity:1}body{margin:10px;-webkit-box-shadow:0 0 40px rgba(0,0,0,0.29);-moz-box-shadow:0 0 40px rgba(0,0,0,0.29);box-shadow:0 0 40px rgba(0,0,0,0.29);border:1px solid rgba(255,255,255,0.6)}.header #heading-container #logo{width:auto;position:absolute;margin-top:20px}.header #heading-container .site-desciption{width:auto}.header nav{margin:50px 0}h1.intro-text{font-size:2.9em}a.category-callout h1{font-size:3.2em}a.category-callout h2{font-size:2.2em}.lt-ie9 .landing-page,.lt-ie9 .slider-wrap ul#slider li span,.lt-ie9 article{background-color:#fff!important}\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\css\\style.css:\n 1894    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);\n 1895  }\n 1896: .slider-wrap {\n 1897    display: none;\n 1898  }\n ....\n 2030      font-size: 1em;\n 2031    }\n 2032:   .slider-wrap {\n 2033      width: 100%;\n 2034      float: left;\n ....\n 2041      display: block;\n 2042    }\n 2043:   .slider-wrap ul#slider li {\n 2044      overflow: visible !important;\n 2045      width: 100%;\n 2046    }\n 2047:   .slider-wrap ul#slider li img {\n 2048      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);\n 2049      -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);\n ....\n 2052      max-width: 100%;\n 2053    }\n 2054:   .slider-wrap ul#slider li span {\n 2055      opacity: 0;\n 2056      -webkit-transition: opacity 0.2s;\n ....\n 2071      font-size: 0.9em;\n 2072    }\n 2073:   .slider-wrap ul#slider li:hover span,\n 2074:   .slider-wrap ul#slider li.touched span {\n 2075      opacity: 1;\n 2076    }\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\_481up.less:\n  210  }\n  211  \n  212: .slider-wrap {\n  213  	width: 100%;\n  214  	float: left;\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\_base.less:\n 1458  }\n 1459  \n 1460: .slider-wrap {\n 1461  	display: none;\n 1462  }\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\ie.less:\n   59  \n   60  .lt-ie9 .landing-page,\n   61: .lt-ie9 .slider-wrap ul#slider li span,\n   62  .lt-ie9 article  {\n   63      background-color: #fff !important;\n\n17 matches across 5 files\n",
-			"settings":
-			{
-				"buffer_size": 13383,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "wp-content/themes/evanart/library/less/_481up.less",
-			"settings":
-			{
-				"buffer_size": 3260,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "wp-content/themes/evanart/library/js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 3775,
+				"buffer_size": 3870,
 				"line_ending": "Windows"
 			}
 		},
@@ -53,7 +31,58 @@
 			"file": "wp-content/themes/evanart/library/less/_base.less",
 			"settings":
 			{
-				"buffer_size": 31978,
+				"buffer_size": 32069,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/library/less/_mixins.less",
+			"settings":
+			{
+				"buffer_size": 9215,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/library/less/lesshat.less",
+			"settings":
+			{
+				"buffer_size": 114655,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/library/less/style.less",
+			"settings":
+			{
+				"buffer_size": 2974,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/library/less/_768up.less",
+			"settings":
+			{
+				"buffer_size": 7008,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/******************************************************************\nSite Name: \nAuthor: \n\nStylesheet: Desktop Stylsheet\n\nThis is the desktop size. It's larger than an iPad so it will only\nbe seen on the Desktop. \n\n******************************************************************/\n\n\n// body {\n//    margin: 10px;\n//    .box-shadow(0 0 40px rgba(0,0,0,.29));\n//    border: 1px solid rgba(255,255,255,.6);\n// }\n\n.header {\n	#heading-container {\n            #logo {\n                width: auto;\n				position: absolute;\n                margin-top:20px;\n		}\n            \n	    .site-desciption {\n                \n                width: auto;\n      \n            }\n	}\n        \n}\n\n.home.page .header #heading-container #logo {\n	width: 100%;\n	position: relative;\n}\n\n\n\n\n.header {\n	nav {\n		margin: 50px 0;\n		ul.nav.top-nav {\n		\n			\n			li {\n				\n		\n				a {\n					\n				}\n                        }\n		} /* end .nav */\n	} /* end nav */\n} /* end .header */\n\n//.ninecol.first {\n//width: 74.30939226%;\n//}\n//\n//.threecol.last {\n//float: right;\n//margin-left: 2.762430939%;\n//width: 22.928176794%;\n//}\n\n\n\n/*********************\n14. Landing Page Specific\n*********************/\n\n\nh1 {\n	&.intro-text {\n		font-size: 2.9em;\n	}\n	\n}\n\na {\n	&.category-callout {\n		h1 {\n			font-size: 3.2em;\n			&:hover {\n			}\n		}\n		h2 {\n			font-size: 2.2em;\n		}\n		p {\n			\n		}\n		.callout-box {\n		}\n		\n		&.professional {\n			h1 {\n				\n			}\n			.callout-box {\n			}\n		}\n		\n		&.personal {\n			\n			.callout-box {\n				\n			}\n		}\n		\n	}\n}\n\n\n/*********************\n15. For Dev\n*********************/\n\n//body {\n//	border: 1px solid orange;\n//}",
+			"file": "wp-content/themes/evanart/library/less/_1030up.less",
+			"file_size": 1753,
+			"file_write_time": 130276572252827824,
+			"settings":
+			{
+				"buffer_size": 1580,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/library/less/_481up.less",
+			"settings":
+			{
+				"buffer_size": 3259,
 				"line_ending": "Windows"
 			}
 		}
@@ -106,6 +135,11 @@
 	},
 	"file_history":
 	[
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/js/owl.carousel.css",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/single-custom_type.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/page-landing.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_481up.less",
+		"/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_base.less",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/ie.less",
 		"/E/Evan/xampp/apache/conf/httpd.conf",
@@ -117,7 +151,6 @@
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/E/Evan/xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/E/Evan/xampp/htdocs/projects/bootstrap-master/examples/offcanvas/index.html",
-		"/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
 		"/E/Evan/xampp/htdocs/projects/bootstrap-master/examples/grid/index.html",
 		"/E/Evan/xampp/htdocs/projects/otterstyle/less/mediaQueries.less",
 		"/E/Evan/Design/xampp/htdocs/evanart/wp-content/themes/evanart/library/less/_mixins.less",
@@ -131,7 +164,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -142,6 +175,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".clearfix",
+			"owl-wrapper",
+			"landing",
+			"body",
+			"body {\n//    margin: 5px;\n//    .box-shadow(0 0 30px rgba(0,0,0,.29));\n//    border: 1px solid rgba(255,255,255,.6);\n// }",
+			".footer",
+			"body",
+			"box",
+			"position: absolute;",
+			";\n",
+			"owl-page",
+			"prev",
+			"'prev'",
+			"\"prev\"",
+			"prev",
+			"prew",
+			"owl-controls",
 			"slider",
 			"3",
 			".slider-wrap",
@@ -165,273 +215,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
-					"settings":
-					{
-						"buffer_size": 593,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								593,
-								593
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 700.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"settings":
-					{
-						"buffer_size": 13383,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										5032,
-										5044
-									],
-									[
-										5257,
-										5269
-									],
-									[
-										5321,
-										5333
-									],
-									[
-										5498,
-										5510
-									],
-									[
-										5941,
-										5953
-									],
-									[
-										5978,
-										5990
-									],
-									[
-										11728,
-										11740
-									],
-									[
-										11970,
-										11982
-									],
-									[
-										12071,
-										12083
-									],
-									[
-										12187,
-										12199
-									],
-									[
-										12300,
-										12312
-									],
-									[
-										12501,
-										12513
-									],
-									[
-										12657,
-										12669
-									],
-									[
-										12704,
-										12716
-									],
-									[
-										12894,
-										12906
-									],
-									[
-										13065,
-										13077
-									],
-									[
-										13252,
-										13264
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								12900,
-								12900
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1634.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/evanart/library/less/_481up.less",
-					"settings":
-					{
-						"buffer_size": 3260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3158,
-								3158
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3898.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "wp-content/themes/evanart/library/js/scripts.js",
 					"settings":
 					{
-						"buffer_size": 3775,
+						"buffer_size": 3870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3380,
-								3380
+								3527,
+								3527
 							]
 						],
 						"settings":
@@ -441,13 +241,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1974.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 1,
 					"file": "wp-content/themes/evanart/header.php",
 					"settings":
 					{
@@ -474,19 +274,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "wp-content/themes/evanart/library/less/_base.less",
 					"settings":
 					{
-						"buffer_size": 31978,
+						"buffer_size": 32069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								24874,
-								24874
+								22818,
+								22818
 							]
 						],
 						"settings":
@@ -495,7 +295,171 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 30068.0,
+						"translation.y": 27602.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/evanart/library/less/_mixins.less",
+					"settings":
+					{
+						"buffer_size": 9215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								902,
+								786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 22.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/evanart/library/less/lesshat.less",
+					"settings":
+					{
+						"buffer_size": 114655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114655,
+								114655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 40909.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/evanart/library/less/style.less",
+					"settings":
+					{
+						"buffer_size": 2974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/evanart/library/less/_768up.less",
+					"settings":
+					{
+						"buffer_size": 7008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/evanart/library/less/_1030up.less",
+					"settings":
+					{
+						"buffer_size": 1580,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								756,
+								756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/evanart/library/less/_481up.less",
+					"settings":
+					{
+						"buffer_size": 3259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2348,
+								2348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1895.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -559,6 +523,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true
 }

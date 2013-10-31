@@ -11,7 +11,7 @@ Template Name: Landing Page
 			
 			<div id="content">
 			
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="clearfix">
 		
 			
 				    <div id="main" class="twelvecol first clearfix" role="main">
@@ -22,11 +22,11 @@ Template Name: Landing Page
 						
 						    
 					
-						    <section class="entry-content">
+						    <section class="entry-content clearfix">
 							    <?php the_content(); ?>
 						    </section> <!-- end article section -->
 						
-						    <footer class="article-footer">
+						    <footer class="article-footer clearfix">
 							    <p class="clearfix"><?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?></p>
 							
 						    </footer> <!-- end article footer -->

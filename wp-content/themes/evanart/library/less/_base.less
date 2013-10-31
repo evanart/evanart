@@ -47,9 +47,9 @@ body {
 	line-height: 1.5;
 	color: @evanart-text;
 	background: url(../images/bgTexture.gif);
-	margin:10px 0;
-	.box-shadow(0 0 30px rgba(0,0,0,.29));
-	border: 1px solid rgba(255,255,255,.6);
+	// margin:10px 0;
+	// // .box-shadow(0 0 30px rgba(0,0,0,.29));
+	// border: 1px solid rgba(255,255,255,.6);
 }
 
 
@@ -295,10 +295,6 @@ h5, .h5 {
 07. NAVIGATION STYLES
 *********************/
 
-body {
-	border: 10px solid black;
-}
-
 /*
 all navs have a .nav class applied via
 the wp_menu function; this is so we can
@@ -309,7 +305,7 @@ and more scalable.
 
 .nav.top-nav {
 	
-
+	
 	li {
 
 		a {
@@ -1403,6 +1399,24 @@ img[class*="wp-image-"],
 14. Landing Page Specific
 *********************/
 
+.home.page {
+
+	ul.nav.top-nav {
+		display: none;
+	}
+	.header {
+		#heading-container {
+
+		}
+		nav {
+		height: 45px;
+		margin: -80px 0 0;
+		clear: none;
+		}
+	}
+}
+
+
 .landing-page {
 	.AlphaBox;
 }
@@ -1463,10 +1477,14 @@ a {
 	width: 100%;
 	float: left;
 	display: block;
-	
+	margin-bottom: 60px;
+	padding: 10px 0;
+	background-color: rgba(255,255,255,.7);
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	ul {
 		&#slider {
-			
+			margin: 0;
 			li {
 				width: 100%;
 				img {
@@ -1739,93 +1757,117 @@ a {
 *	v1.24
 */
 
-.owl-theme .owl-controls{
-	margin-top: 10px;
-	text-align: center;
+.owl-theme {
+	.owl-controls{
+		text-align: center;
+		height: 0;
+		.owl-pagination {
+			height: 0;
+			padding: 0 40px;
+		}
+		.owl-buttons {
+			div {
+				color: #FFF;
+				display: inline-block;
+				zoom: 1;
+				*display: inline;/*IE7 life-saver */
+				font-size: 36px;
+				line-height: 1;
+				padding: 0px 6px 6px;
+				margin-top: -10px;
+				color: @evanart-red;
+				text-transform: uppercase;
+
+			}
+			.owl-prev, .owl-next {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				color: #fff;
+			}
+			.owl-next {
+				left: auto;
+				right: 0;
+				padding-left:9px;
+			}
+		}
+		&.clickable {
+			.owl-buttons {
+				div {
+					&:hover {
+						background-color: @evanart-lightred;
+						color: #fff;
+						text-shadow: 0 1px 1px rgba(0,0,0,.4);
+					}
+				}
+			}
+			.owl-page {
+				&:hover {
+					span {
+						background-color: @evanart-lightred;
+						
+					}
+					
+				}
+			}
+		}
+		.owl-page {
+			display: inline-block;
+			zoom: 1;
+			*display: inline;/*IE7 life-saver */
+			span {
+				display: block;
+				width: 20px;
+				margin: 0 2px;
+				height: 20px;
+				background-color: @evanart-lightred;
+				&.owl-numbers {
+					height: auto;
+					width: auto;
+					color: #FFF;
+					padding: 2px 10px;
+					font-size: 12px;
+					-webkit-border-radius: 30px;
+					-moz-border-radius: 30px;
+					border-radius: 30px;
+				}
+			}
+			&.active {
+				span {
+					background-color: @evanart-red;
+				}
+			}
+		}
+	}
 }
 
-/* Styling Next and Prev buttons */
-
-.owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-}
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
-}
-
-/* Styling Pagination*/
-
-.owl-theme .owl-controls .owl-page{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-}
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-}
-
-/* If PaginationNumbers is true */
-
-.owl-theme .owl-controls .owl-page span.owl-numbers{
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-/* preloading images */
-.owl-item.loading{
-	min-height: 150px;
-	background: url(AjaxLoader.gif) no-repeat center center
+.owl-item {
+	&.loading {
+		min-height: 150px;
+		background: url(AjaxLoader.gif) no-repeat center center
+	}
+	
 }
 
 
-.owl-theme .owl-controls .owl-buttons .owl-prev,
-.owl-theme .owl-controls .owl-buttons .owl-next {
-	position: absolute;
-	left: 0;
-	margin-top: -30px;
+
+/* ClearFix*/
+
+
+.clearfix {
+	clear: both;
+	&:before,
+	&:after {
+		content: " ";
+    	display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-next {
-	left: auto;
-	right: 0;
-}
+
 
 
 /*********************

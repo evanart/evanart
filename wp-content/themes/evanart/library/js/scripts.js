@@ -117,15 +117,17 @@ jQuery(document).ready(function() {
  
   owl.owlCarousel({
       navigation: true,
+      navigationText: ["&laquo;","&raquo;"],
+      pagination: false,
       lazyLoad : true,
       autoPlay: 2000,
-      items : 3, //10 items above 1000px browser width
-      itemsDesktop: [1200,3], // betweem 900px and 601px
-      itemsTablet: [900,2], //2 items between 600 and 0
-      itemsMobile : [580,1] // itemsMobile disabled - inherit from itemsTablet option
-
+      stopOnHover: true,
+      items : 4, //10 items above 1000px browser width
+      itemsDesktop: [1500,3], // betweem 900px and 601px
+      itemsTablet: [1000,2], //2 items between 600 and 0
+      itemsMobile : [500,1] // itemsMobile disabled - inherit from itemsTablet option 
   });
- 
+
  
 });
 
