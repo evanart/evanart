@@ -47,6 +47,7 @@ body {
 	line-height: 1.5;
 	color: @evanart-text;
 	background: url(../images/bgTexture.gif);
+	-webkit-font-smoothing: antialiased;
 	// margin:10px 0;
 	// // .box-shadow(0 0 30px rgba(0,0,0,.29));
 	// border: 1px solid rgba(255,255,255,.6);
@@ -241,7 +242,7 @@ h5, .h5 {
 			float: left;
 			width: 100%;
 			text-align: center;
-			padding: 20px 0;
+			padding: 40px 0 0;
 			img {
 			
 			}
@@ -564,7 +565,7 @@ and more scalable.
 			
 			ul.text-list, ol.text-list {
 				list-style: circle;
-				margin-left: 20px;
+				margin-left: 40px;
 			}
 
 			ul {
@@ -1409,6 +1410,7 @@ img[class*="wp-image-"],
 
 		}
 		nav {
+			display: none;
 		height: 45px;
 		margin: -80px 0 0;
 		clear: none;
@@ -1488,7 +1490,7 @@ a {
 			li {
 				width: 100%;
 				img {
-					// .box-shadow(0 1px 5px rgba(0,0,0,.3));
+					.box-shadow(0 0 5px rgba(0,0,0,.9));
 					display: block;
 					max-width: 100%;
 					margin: 0;

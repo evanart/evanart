@@ -781,6 +781,7 @@ body {
   line-height: 1.5;
   color: #565656;
   background: url(../images/bgTexture.gif);
+  -webkit-font-smoothing: antialiased;
 }
 #container {
   background: url(../images/stripesBg.jpg) no-repeat 50% top transparent;
@@ -984,7 +985,7 @@ h5,
   float: left;
   width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0 0;
 }
 .header .site-desciption {
   font-weight: 400;
@@ -1237,7 +1238,7 @@ article.page.static-page {
 .entry-content ul.text-list,
 .entry-content ol.text-list {
   list-style: circle;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .entry-content dd {
   margin-left: 0;
@@ -1798,6 +1799,7 @@ img[class*="wp-image-"],
   display: none;
 }
 .home.page .header nav {
+  display: none;
   height: 45px;
   margin: -80px 0 0;
   clear: none;
@@ -1899,6 +1901,9 @@ a.category-callout.personal .callout-box h2 {
   width: 100%;
 }
 .slider-wrap ul#slider li img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   display: block;
   max-width: 100%;
   margin: 0;
@@ -2360,6 +2365,14 @@ a.category-callout.personal .callout-box h2 {
 /*********************
 15. For Dev
 *********************/
+@media only screen and (min-width: 420px) {
+  .home.page .header nav {
+    display: block;
+  }
+  .home.page .header #heading-container #logo {
+    padding: 20px 0;
+  }
+}
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2891,7 +2904,6 @@ you can add resource intensive styles.
   .header #heading-container #logo {
     width: auto;
     position: absolute;
-    margin-top: 20px;
   }
   .header #heading-container .site-desciption {
     width: auto;
@@ -2899,9 +2911,6 @@ you can add resource intensive styles.
   .home.page .header #heading-container #logo {
     width: 100%;
     position: relative;
-  }
-  .home.page .header nav {
-    margin: -80px 0 0;
   }
   .header {
     /* end nav */

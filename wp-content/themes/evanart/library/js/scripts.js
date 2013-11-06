@@ -120,7 +120,7 @@ jQuery(document).ready(function() {
       navigationText: ["&laquo;","&raquo;"],
       pagination: false,
       lazyLoad : true,
-      autoPlay: 2000,
+      autoPlay: 4000,
       stopOnHover: true,
       items : 4, //10 items above 1000px browser width
       itemsDesktop: [1500,3], // betweem 900px and 601px

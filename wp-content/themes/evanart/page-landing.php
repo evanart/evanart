@@ -22,7 +22,7 @@ Template Name: Landing Page
 						
 						    
 					
-						    <section class="entry-content clearfix">
+						    <section class="entry-content">
 							    <?php the_content(); ?>
 						    </section> <!-- end article section -->
 						

@@ -12,18 +12,92 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/evanart/library/js/scripts.js",
+			"contents": "Searching 80 files for \".entry-content\"\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\css\\ie.css:\n  322  *********************/\n  323  /* entry content */\n  324: .entry-content {\n  325    /* at this larger size, we can start to align images */\n  326  \n  327  }\n  328: .entry-content .alignleft,\n  329: .entry-content img.alignleft {\n  330    margin-right: 1.5em;\n  331    display: inline;\n  332    float: left;\n  333  }\n  334: .entry-content .alignright,\n  335: .entry-content img.alignright {\n  336    margin-left: 1.5em;\n  337    display: inline;\n  338    float: right;\n  339  }\n  340: .entry-content .aligncenter,\n  341: .entry-content img.aligncenter {\n  342    margin-right: auto;\n  343    margin-left: auto;\n  ...\n  345    clear: both;\n  346  }\n  347: /* end .entry-content */\n  348  /*********************\n  349  FOOTER STYLES\n  ...\n  530    font-size: .7em;\n  531  }\n  532: .post.format-image .entry-content {\n  533    float: left;\n  534    max-width: 71%;\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\css\\style.css:\n 1176    display: none;\n 1177  }\n 1178: article.post.category-sectionheading section.entry-content .whiteBox {\n 1179    background: #fff;\n 1180    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);\n ....\n 1185    font-size: 1.1em;\n 1186  }\n 1187: article.post.category-sectionheading section.entry-content .whiteBox a img {\n 1188    -webkit-box-shadow: none;\n 1189    -moz-box-shadow: none;\n ....\n 1217  }\n 1218  /* entry content */\n 1219: .entry-content {\n 1220    /*\n 1221  			image alignment on a screen this size may be\n ....\n 1226  \n 1227  }\n 1228: .entry-content p {\n 1229    margin: 0 0 20px 0;\n 1230  }\n 1231: .entry-content p:first-child {\n 1232    margin-top: 0;\n 1233  }\n 1234: .entry-content ul,\n 1235: .entry-content ol {\n 1236    margin: 0 0 20px 0;\n 1237  }\n 1238: .entry-content ul.text-list,\n 1239: .entry-content ol.text-list {\n 1240    list-style: circle;\n 1241    margin-left: 20px;\n 1242  }\n 1243: .entry-content dd {\n 1244    margin-left: 0;\n 1245    font-size: 0.9em;\n ....\n 1247    margin-bottom: 1.5em;\n 1248  }\n 1249: .entry-content img {\n 1250    margin: 0 0 1.5em 0;\n 1251    max-width: 100%;\n 1252    height: auto;\n 1253  }\n 1254: .entry-content a img {\n 1255    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);\n 1256    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);\n 1257    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);\n 1258  }\n 1259: .entry-content video,\n 1260: .entry-content object {\n 1261    max-width: 100%;\n 1262    height: auto;\n 1263  }\n 1264: .entry-content pre {\n 1265    background: #eee;\n 1266    border: 1px solid #cecece;\n 1267    padding: 10px;\n 1268  }\n 1269: /* end .entry-content */\n 1270  .wp-caption {\n 1271    /* images inside wp-caption */\n ....\n 2422    *********************/\n 2423    /* entry content */\n 2424:   .entry-content {\n 2425      /* at this larger size, we can start to align images */\n 2426    \n 2427    }\n 2428:   .entry-content .alignleft,\n 2429:   .entry-content img.alignleft {\n 2430      margin-right: 1.5em;\n 2431      display: inline;\n 2432      float: left;\n 2433    }\n 2434:   .entry-content .alignright,\n 2435:   .entry-content img.alignright {\n 2436      margin-left: 1.5em;\n 2437      display: inline;\n 2438      float: right;\n 2439    }\n 2440:   .entry-content .aligncenter,\n 2441:   .entry-content img.aligncenter {\n 2442      margin-right: auto;\n 2443      margin-left: auto;\n ....\n 2445      clear: both;\n 2446    }\n 2447:   /* end .entry-content */\n 2448    /*********************\n 2449    FOOTER STYLES\n ....\n 2630      font-size: .7em;\n 2631    }\n 2632:   .post.format-image .entry-content {\n 2633      float: left;\n 2634      max-width: 71%;\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\_481up.less:\n   83  \n   84  /* entry content */\n   85: .entry-content {\n   86  			\n   87  	\n   ..\n  105  	\n  106  	\n  107: } /* end .entry-content */\n  108  \n  109  /*********************\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\_768up.less:\n   46  	}\n   47  	\n   48: 	.entry-content {\n   49  		\n   50  		\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\_base.less:\n  499  				display: none;\n  500  			}\n  501: 			section.entry-content {\n  502  				.whiteBox {\n  503  					background: #fff;\n  ...\n  545  \n  546  		/* entry content */\n  547: 		.entry-content {\n  548  \n  549  			p {\n  ...\n  635  			}\n  636  \n  637: 		} /* end .entry-content */\n  638  \n  639  		.wp-caption {\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\less\\ie.css:\n  321  *********************/\n  322  /* entry content */\n  323: .entry-content {\n  324    /* at this larger size, we can start to align images */\n  325  \n  326  }\n  327: .entry-content .alignleft,\n  328: .entry-content img.alignleft {\n  329    margin-right: 1.5em;\n  330    display: inline;\n  331    float: left;\n  332  }\n  333: .entry-content .alignright,\n  334: .entry-content img.alignright {\n  335    margin-left: 1.5em;\n  336    display: inline;\n  337    float: right;\n  338  }\n  339: .entry-content .aligncenter,\n  340: .entry-content img.aligncenter {\n  341    margin-right: auto;\n  342    margin-left: auto;\n  ...\n  344    clear: both;\n  345  }\n  346: /* end .entry-content */\n  347  /*********************\n  348  FOOTER STYLES\n\n48 matches across 6 files\n\n\nSearching 80 files for \"entry-content clearfix\"\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\archive.php:\n   55  						    </header> <!-- end article header -->\n   56  					\n   57: 						    <section class=\"entry-content clearfix\">\n   58  						\n   59  							   <?php // the_post_thumbnail( 'bones-thumb-300' ); ?> \n\n1 match in 1 file\n\n\nSearching 80 files for \"Posted <time\"\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\archive-custom_type.php:\n   17  							    <h3 class=\"h2\"><a href=\"<?php the_permalink() ?>\" rel=\"bookmark\" title=\"<?php the_title_attribute(); ?>\"><?php the_title(); ?></a></h3>\n   18                    <p class=\"byline vcard\"><?php\n   19:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());\n   20                    ?></p>\n   21  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\index.php:\n   15  							    <h1 class=\"h2\"><a href=\"<?php the_permalink() ?>\" rel=\"bookmark\" title=\"<?php the_title_attribute(); ?>\"><?php the_title(); ?></a></h1>\n   16                    <p class=\"byline vcard\"><?php\n   17:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));\n   18                    ?></p>\n   19  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\page-custom.php:\n   21  							    <h1 class=\"page-title\"><?php the_title(); ?></h1>\n   22                    <p class=\"byline vcard\"><?php\n   23:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());\n   24                    ?></p>\n   25  \n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\page-nosidebar.php:\n   21  							    <h1 class=\"page-title\"><?php the_title(); ?></h1>\n   22                    <p class=\"byline vcard\"><?php\n   23:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());\n   24                    ?></p>\n   25  \n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\page.php:\n   15  							    <h1 class=\"page-title\" itemprop=\"headline\"><?php the_title(); ?></h1>\n   16                    <p class=\"byline vcard\"><?php\n   17:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());\n   18                    ?></p>\n   19  \n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\search.php:\n   16  									<h3 class=\"search-title\"><a href=\"<?php the_permalink() ?>\" rel=\"bookmark\" title=\"<?php the_title_attribute(); ?>\"><?php the_title(); ?></a></h3>\n   17                    <p class=\"byline vcard\"><?php\n   18:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_category_list(', '));\n   19                    ?></p>\n   20  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\single-custom_type.php:\n   30  							    <h1 class=\"single-title custom-post-type-title\"><?php the_title(); ?></h1>\n   31                    <p class=\"byline vcard\"><?php\n   32:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F js, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( get_the_ID(), 'custom_cat', \"\" ));\n   33                    ?></p>\n   34  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\single.php:\n   15  									<h1 class=\"entry-title single-title\" itemprop=\"headline\"><?php the_title(); ?></h1>\n   16                    <p class=\"byline vcard\"><?php\n   17:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&amp;</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F js, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_category_list(', '));\n   18                    ?></p>\n   19  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\taxonomy-custom_cat.php:\n   32  							    <h3 class=\"h2\"><a href=\"<?php the_permalink() ?>\" rel=\"bookmark\" title=\"<?php the_title_attribute(); ?>\"><?php the_title(); ?></a></h3>\n   33                    <p class=\"byline vcard\"><?php\n   34:                     printf(__('Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by <span class=\"author\">%3$s</span> <span class=\"amp\">&</span> filed under %4$s.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F js, Y', 'bonestheme')), bones_get_the_author_posts_link(), get_the_term_list( get_the_ID(), 'custom_cat', \"\" ));\n   35                    ?></p>\n   36  						\n\nE:\\Evan\\xampp\\htdocs\\projects\\evanart\\wp-content\\themes\\evanart\\library\\translation\\hr.po:\n   36  #, php-format\n   37  msgid \"\"\n   38: \"Posted <time class=\\\"updated\\\" datetime=\\\"%1$s\\\" pubdate>%2$s</time> by \"\n   39  \"<span class=\\\"author\\\">%3$s</span>.\"\n   40  msgstr \"\"\n   ..\n  101  #, php-format\n  102  msgid \"\"\n  103: \"Posted <time class=\\\"updated\\\" datetime=\\\"%1$s\\\" pubdate>%2$s</time> by \"\n  104  \"<span class=\\\"author\\\">%3$s</span> <span class=\\\"amp\\\">&</span> filed under \"\n  105  \"%4$s.\"\n  ...\n  292  #, php-format\n  293  msgid \"\"\n  294: \"Posted <time class=\\\"updated\\\" datetime=\\\"%1$s\\\" pubdate>%2$s</time> by \"\n  295  \"<span class=\\\"author\\\">%3$s</span> <span class=\\\"amp\\\">&amp;</span> filed \"\n  296  \"under %4$s.\"\n\n12 matches across 10 files\n",
 			"settings":
 			{
-				"buffer_size": 3870,
+				"buffer_size": 11956,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/taxonomy-custom_cat.php",
+			"settings":
+			{
+				"buffer_size": 3142,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "wp-content/themes/evanart/header.php",
+			"file": "wp-content/themes/evanart/single.php",
 			"settings":
 			{
-				"buffer_size": 3816,
+				"buffer_size": 2155,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/single-custom_type.php",
+			"settings":
+			{
+				"buffer_size": 2541,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/search.php",
+			"settings":
+			{
+				"buffer_size": 2741,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/page.php",
+			"settings":
+			{
+				"buffer_size": 2191,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/page-nosidebar.php",
+			"settings":
+			{
+				"buffer_size": 2171,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/page-custom.php",
+			"settings":
+			{
+				"buffer_size": 2212,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/index.php",
+			"settings":
+			{
+				"buffer_size": 2828,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/archive-custom_type.php",
+			"settings":
+			{
+				"buffer_size": 2733,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wp-content/themes/evanart/archive.php",
+			"settings":
+			{
+				"buffer_size": 4029,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,23 +105,7 @@
 			"file": "wp-content/themes/evanart/library/less/_base.less",
 			"settings":
 			{
-				"buffer_size": 32069,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/evanart/library/less/_mixins.less",
-			"settings":
-			{
-				"buffer_size": 9215,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/evanart/library/less/lesshat.less",
-			"settings":
-			{
-				"buffer_size": 114655,
+				"buffer_size": 32122,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,34 +113,7 @@
 			"file": "wp-content/themes/evanart/library/less/style.less",
 			"settings":
 			{
-				"buffer_size": 2974,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/evanart/library/less/_768up.less",
-			"settings":
-			{
-				"buffer_size": 7008,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "/******************************************************************\nSite Name: \nAuthor: \n\nStylesheet: Desktop Stylsheet\n\nThis is the desktop size. It's larger than an iPad so it will only\nbe seen on the Desktop. \n\n******************************************************************/\n\n\n// body {\n//    margin: 10px;\n//    .box-shadow(0 0 40px rgba(0,0,0,.29));\n//    border: 1px solid rgba(255,255,255,.6);\n// }\n\n.header {\n	#heading-container {\n            #logo {\n                width: auto;\n				position: absolute;\n                margin-top:20px;\n		}\n            \n	    .site-desciption {\n                \n                width: auto;\n      \n            }\n	}\n        \n}\n\n.home.page .header #heading-container #logo {\n	width: 100%;\n	position: relative;\n}\n\n\n\n\n.header {\n	nav {\n		margin: 50px 0;\n		ul.nav.top-nav {\n		\n			\n			li {\n				\n		\n				a {\n					\n				}\n                        }\n		} /* end .nav */\n	} /* end nav */\n} /* end .header */\n\n//.ninecol.first {\n//width: 74.30939226%;\n//}\n//\n//.threecol.last {\n//float: right;\n//margin-left: 2.762430939%;\n//width: 22.928176794%;\n//}\n\n\n\n/*********************\n14. Landing Page Specific\n*********************/\n\n\nh1 {\n	&.intro-text {\n		font-size: 2.9em;\n	}\n	\n}\n\na {\n	&.category-callout {\n		h1 {\n			font-size: 3.2em;\n			&:hover {\n			}\n		}\n		h2 {\n			font-size: 2.2em;\n		}\n		p {\n			\n		}\n		.callout-box {\n		}\n		\n		&.professional {\n			h1 {\n				\n			}\n			.callout-box {\n			}\n		}\n		\n		&.personal {\n			\n			.callout-box {\n				\n			}\n		}\n		\n	}\n}\n\n\n/*********************\n15. For Dev\n*********************/\n\n//body {\n//	border: 1px solid orange;\n//}",
-			"file": "wp-content/themes/evanart/library/less/_1030up.less",
-			"file_size": 1753,
-			"file_write_time": 130276572252827824,
-			"settings":
-			{
-				"buffer_size": 1580,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "wp-content/themes/evanart/library/less/_481up.less",
-			"settings":
-			{
-				"buffer_size": 3259,
+				"buffer_size": 3132,
 				"line_ending": "Windows"
 			}
 		}
@@ -135,16 +166,25 @@
 	},
 	"file_history":
 	[
-		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/js/owl.carousel.css",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/single-custom_type.php",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/page-landing.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/archive-custom_type.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/index.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/single.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/page.php",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_481up.less",
-		"/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_1030up.less",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_768up.less",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/style.less",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/lesshat.less",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_mixins.less",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/_base.less",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/header.php",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/js/scripts.js",
+		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/js/owl.carousel.css",
+		"/E/Evan/xampp/htdocs/projects/modal-for-george/css/styles.css",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/less/ie.less",
 		"/E/Evan/xampp/apache/conf/httpd.conf",
-		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/library/js/scripts.js",
-		"/E/Evan/xampp/htdocs/projects/evanart/wp-content/themes/evanart/header.php",
 		"/E/Evan/xampp/htdocs/projects/evanart/wp-config.php",
 		"/E/Evan/xampp/htdocs/projects/modal-for-george/index.html",
 		"/E/Evan/xampp/htdocs/evanart/wp-config.php",
@@ -164,7 +204,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 96.0,
 		"where_history":
 		[
 			""
@@ -175,6 +215,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" .",
+			"padding: 20px 0;",
+			"#heading-container",
+			"Posted <time",
+			"entry-content clearfix",
+			".entry-content",
 			".clearfix",
 			"owl-wrapper",
 			"landing",
@@ -215,167 +261,311 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 12,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/evanart/library/js/scripts.js",
 					"settings":
 					{
-						"buffer_size": 3870,
+						"buffer_size": 11956,
 						"regions":
 						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										189,
+										203
+									],
+									[
+										295,
+										309
+									],
+									[
+										329,
+										343
+									],
+									[
+										454,
+										468
+									],
+									[
+										489,
+										503
+									],
+									[
+										615,
+										629
+									],
+									[
+										651,
+										665
+									],
+									[
+										792,
+										806
+									],
+									[
+										928,
+										942
+									],
+									[
+										1164,
+										1178
+									],
+									[
+										1371,
+										1385
+									],
+									[
+										1520,
+										1534
+									],
+									[
+										1634,
+										1648
+									],
+									[
+										1698,
+										1712
+									],
+									[
+										1769,
+										1783
+									],
+									[
+										1795,
+										1809
+									],
+									[
+										1860,
+										1874
+									],
+									[
+										1896,
+										1910
+									],
+									[
+										1999,
+										2013
+									],
+									[
+										2124,
+										2138
+									],
+									[
+										2240,
+										2254
+									],
+									[
+										2448,
+										2462
+									],
+									[
+										2477,
+										2491
+									],
+									[
+										2566,
+										2580
+									],
+									[
+										2697,
+										2711
+									],
+									[
+										2852,
+										2866
+									],
+									[
+										2966,
+										2980
+									],
+									[
+										3002,
+										3016
+									],
+									[
+										3137,
+										3151
+									],
+									[
+										3174,
+										3188
+									],
+									[
+										3310,
+										3324
+									],
+									[
+										3348,
+										3362
+									],
+									[
+										3499,
+										3513
+									],
+									[
+										3645,
+										3659
+									],
+									[
+										3846,
+										3860
+									],
+									[
+										3923,
+										3937
+									],
+									[
+										4097,
+										4111
+									],
+									[
+										4279,
+										4293
+									],
+									[
+										4401,
+										4415
+									],
+									[
+										4484,
+										4498
+									],
+									[
+										4683,
+										4697
+									],
+									[
+										4789,
+										4803
+									],
+									[
+										4823,
+										4837
+									],
+									[
+										4948,
+										4962
+									],
+									[
+										4983,
+										4997
+									],
+									[
+										5109,
+										5123
+									],
+									[
+										5145,
+										5159
+									],
+									[
+										5286,
+										5300
+									],
+									[
+										5611,
+										5633
+									],
+									[
+										6117,
+										6129
+									],
+									[
+										6707,
+										6719
+									],
+									[
+										7288,
+										7300
+									],
+									[
+										7795,
+										7807
+									],
+									[
+										8312,
+										8324
+									],
+									[
+										8905,
+										8917
+									],
+									[
+										9520,
+										9532
+									],
+									[
+										10154,
+										10166
+									],
+									[
+										10835,
+										10847
+									],
+									[
+										11336,
+										11348
+									],
+									[
+										11523,
+										11535
+									],
+									[
+										11749,
+										11761
+									]
+								],
+								"scope": ""
+							}
 						},
 						"selection":
 						[
 							[
-								3527,
-								3527
+								10837,
+								10837
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1974.0,
+						"translation.y": 5700.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "wp-content/themes/evanart/header.php",
+					"file": "wp-content/themes/evanart/taxonomy-custom_cat.php",
 					"settings":
 					{
-						"buffer_size": 3816,
+						"buffer_size": 3142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2799,
-								2799
+								1267,
+								1267
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 690.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/evanart/library/less/_base.less",
-					"settings":
-					{
-						"buffer_size": 32069,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								22818,
-								22818
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 27602.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "wp-content/themes/evanart/library/less/_mixins.less",
-					"settings":
-					{
-						"buffer_size": 9215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								902,
-								786
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 22.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "wp-content/themes/evanart/library/less/lesshat.less",
-					"settings":
-					{
-						"buffer_size": 114655,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								114655,
-								114655
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 40909.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "wp-content/themes/evanart/library/less/style.less",
-					"settings":
-					{
-						"buffer_size": 2974,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								580,
-								580
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 180.0,
@@ -384,24 +574,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "wp-content/themes/evanart/library/less/_768up.less",
+					"buffer": 2,
+					"file": "wp-content/themes/evanart/single.php",
 					"settings":
 					{
-						"buffer_size": 7008,
+						"buffer_size": 2155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								533,
-								533
+								810,
+								810
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -411,46 +601,229 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "wp-content/themes/evanart/library/less/_1030up.less",
+					"buffer": 3,
+					"file": "wp-content/themes/evanart/single-custom_type.php",
 					"settings":
 					{
-						"buffer_size": 1580,
+						"buffer_size": 2541,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								756,
-								756
+								1066,
+								1066
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 300.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/evanart/search.php",
+					"settings":
+					{
+						"buffer_size": 2741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								707,
+								707
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/evanart/page.php",
+					"settings":
+					{
+						"buffer_size": 2191,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								811
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/evanart/page-nosidebar.php",
+					"settings":
+					{
+						"buffer_size": 2171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								782,
+								782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/evanart/page-custom.php",
+					"settings":
+					{
+						"buffer_size": 2212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								791,
+								791
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "wp-content/themes/evanart/library/less/_481up.less",
+					"file": "wp-content/themes/evanart/index.php",
 					"settings":
 					{
-						"buffer_size": 3259,
+						"buffer_size": 2828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2348,
-								2348
+								850,
+								850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 93.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/evanart/archive-custom_type.php",
+					"settings":
+					{
+						"buffer_size": 2733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/evanart/archive.php",
+					"settings":
+					{
+						"buffer_size": 4029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1921,
+								2172
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 99.0,
+						"translation.y": 607.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "wp-content/themes/evanart/library/less/_base.less",
+					"settings":
+					{
+						"buffer_size": 32122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19564,
+								19564
 							]
 						],
 						"settings":
@@ -459,7 +832,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1895.0,
+						"translation.y": 22765.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wp-content/themes/evanart/library/less/style.less",
+					"settings":
+					{
+						"buffer_size": 3132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								991,
+								991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
