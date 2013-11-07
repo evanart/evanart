@@ -164,3 +164,6 @@ pip-log.txt
 
 # Wordpress Config
 wp-config.php
+
+#Sublime Text
+*.sublime-workspace
